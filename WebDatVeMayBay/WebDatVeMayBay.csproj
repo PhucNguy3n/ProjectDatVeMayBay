@@ -104,7 +104,29 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="CSS\stylesAdmin.css" />
+    <Content Include="CSS\stylesUser.css" />
     <Content Include="Global.asax" />
+    <Content Include="Image\client-1.jpg" />
+    <Content Include="Image\client-2.jpg" />
+    <Content Include="Image\client-3.jpg" />
+    <Content Include="Image\client-4.jpg" />
+    <Content Include="Image\header.jpg" />
+    <Content Include="Image\lounge-1.jpg" />
+    <Content Include="Image\lounge-2.jpg" />
+    <Content Include="Image\plan-1.jpg" />
+    <Content Include="Image\plan-2.jpg" />
+    <Content Include="Image\plan-3.jpg" />
+    <Content Include="Image\traveller-1.jpg" />
+    <Content Include="Image\traveller-2.jpg" />
+    <Content Include="Image\traveller-3.jpg" />
+    <Content Include="Image\traveller-4.jpg" />
+    <Content Include="JS\chart-area-demo.js" />
+    <Content Include="JS\chart-bar-demo.js" />
+    <Content Include="JS\chart-pie-demo.js" />
+    <Content Include="JS\datatables-demo.js" />
+    <Content Include="JS\datatables-simple-demo.js" />
+    <Content Include="JS\scripts.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -115,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -149,6 +172,11 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Views\Shared\_LayoutUser.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\PassReset.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -159,8 +187,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Admin\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
