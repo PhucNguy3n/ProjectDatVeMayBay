@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<link rel="stylesheet" href="~/CSS/flightShopping.css" />
+
+<div class="traveler">
+    <div class="traveler-header">
+        <h1>Thanh toán</h1>
+    </div>
+
+    <div class="traveler-form">
+        <p><b>Lưu ý:</b> Vietnam Airlines đặt trụ sở tại Việt Nam. Tùy theo chính sách của mình,
+        ngân hàng phát hành thẻ có thể thu phí trên mỗi giao dịch của Quý khách. 
+        Vietnam Airlines tuyệt đối không chịu trách nhiệm khi phát sinh bất kỳ khoản phí nào liên quan đến việc sử dụng thẻ để thanh toán tại website của Vietnam Airlines. Quý khách nên trực tiếp liên hệ với ngân hàng phát hành thẻ để có đầy đủ thông tin về chi phí phát sinh.</p>
+        <p>
+            Vui lòng không ấn quay lại hoặc tắt trình duyệt trong quá trình thanh toán.
+        </p>
+        <p>Sau khi thanh toán thành công, Quý khách sẽ được chuyển đến trang xác nhận đặt chỗ. 
+        Email xác nhận sẽ được gửi tới Quý khách trong vòng 1 tiếng . 
+        Nếu không nhận được thưu xác nhận, 
+        Quý khách vui lòng liên hệ 24/7: 1900-1100 hoặc +84 24 38320320 
+        (dành cho các cuộc gọi từ ngoài Việt Nam).
+        </p>
+
+    </div>
+
+    <div class="traveler-form">
+        <div class="container">
+            <h5>
+                Tổng tiền: 4.183.000 VND 
+                
+            </h5>
+            <p><strong>Tổng giá cho tất cả các hành khách</strong> (đã bao gồm thuế, phí và chiết khấu).</p>
+            <h6>Chi tiết:</h6>
+            <span id="toggleArrow" class="arrow down">▼</span>
+
+            <div id="details">
+                <ul>
+                    <li><strong>1 Người lớn:</strong> 3.985.000 VND</li>
+                    <li>Phí vận chuyển hàng không: 2.636.000 VND</li>
+                    <li>Phụ thu của hãng hàng không: 900.000 VND</li>
+                    <li>Phụ thu quản trị hệ thống: 900.000 VND</li>
+                    <li>Thuế/giá dịch vụ/phụ thu của sân bay/chính phủ: 449.000 VND</li>
+                    <li>Phí dịch vụ hành khách chặng nội địa: 198.000 VND</li>
+                    <li>Phí soi chiếu an ninh hành khách và hành lý: 40.000 VND</li>
+                    <li>Thuế giá trị gia tăng: 211.000 VND</li>
+                    <li><strong>Các dịch vụ bổ sung:</strong> Bảo hiểm - 198.000 VND</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="traveler-form">
+        <div class="form-child">
+            <h1>TRẺ EM</h1>
+            <form class="form">
+                <div class="group-input">
+                    <div class="gender">
+                        <label for="danhxung">Danh xưng*</label>
+                        <select id="danhxung" name="danhxung">
+                            <option value="nam">Nam</option>
+                            <option value="nu">Nữ</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="group-input">
+                    <label for="lname">Tên đệm và tên (như trong CCCD/hộ chiếu)*</label>
+                    <input type="text" id="lname" name="lastname" placeholder="">
+                </div>
+
+                <div class="group-input">
+                    <label for="fname">Họ (như trong CCCD/hộ chiếu)*</label>
+                    <input type="text" id="fname" name="firstname" placeholder="">
+                </div>
+
+                <div class="group-input">
+                    <label for="datetime">Ngày sinh*</label>
+                    <input type="date" id="fname" name="firstname" placeholder="">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="traveler-form-info">
+        <div class="form-info-contact">
+            <h1>Thông tin liên lạc</h1>
+            <form class="form">
+                <label class="form-header">Thông tin liên lạc này được sử dụng để xử lý và lưu đặt chỗ này.</label>
+                
+                <div class="group-input">
+                    <label for="email">Địa chỉ email bắt buộc*</label>
+                    <input type="email" id="email" name="email" placeholder="">
+                </div>
+                <div class="group-input">
+                    <div class="phone-type">
+                        <label for="phone-type">Loại điện thoại*</label>
+                        <select id="phone-type" name="phone-type">
+                            <option value="single">Cá nhân</option>
+                            <option value="business">Doanh nghiệp</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="group-input">
+                    <label for="phone-number">Số điện thoại*</label>
+                    <input type="text" id="phone-number" name="phone-number" placeholder="">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="traveler-form-check">
+        <div class="group-input">
+            <input type="checkbox" id="privacy" name="privacy" value="privacy">
+            <label for="privacy">
+                Dữ liệu cá nhân của Quý khách thu thập trên trang này được xử lý
+                và lưu trữ bởi Vietnam Airlines cho mục đích và theo điều kiện đã được công bố tại Chính sách bảo mật thông tin của Vietnam Airlines.
+            </label>
+        </div>
+    </div>
+    <button class="btn-submit">Xác nhận</button>
+</div>
+<script>
+    // Lấy các phần tử cần thiết
+    const header = document.getElementById("toggleHeader");
+    const arrow = document.getElementById("toggleArrow");
+    const details = document.getElementById("details");
+
+    // Thêm sự kiện click vào tiêu đề
+    header.addEventListener("click", () => {
+        // Toggle (hiển thị/ẩn) phần details
+        details.classList.toggle("open");
+        
+        // Cập nhật mũi tên lên/xuống
+        if (details.classList.contains("open")) {
+            arrow.textContent = "▲";
+            arrow.classList.remove("down");
+            arrow.classList.add("up");
+            details.style.display = "block"; // Hiển thị phần chi tiết
+        } else {
+            arrow.textContent = "▼";
+            arrow.classList.remove("up");
+            arrow.classList.add("down");
+            details.style.display = "none"; // Ẩn phần chi tiết
+        }
+    });
+</script>

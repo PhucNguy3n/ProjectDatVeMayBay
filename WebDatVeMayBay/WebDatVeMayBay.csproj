@@ -104,6 +104,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="CSS\flightShopping.css" />
     <Content Include="CSS\infoTraverler.css" />
     <Content Include="CSS\stylesAdmin.css" />
     <Content Include="CSS\stylesUser.css" />
@@ -146,6 +147,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Views\Home\FlightShopping.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

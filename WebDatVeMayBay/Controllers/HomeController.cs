@@ -18,5 +18,11 @@ namespace WebDatVeMayBay.Controllers
         {
             return View();
         }
+
+        public ActionResult FlightShopping()
+        {
+            return View();
+        }
+
     }
 }
