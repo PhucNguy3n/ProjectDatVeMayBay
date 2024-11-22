@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&family=Quicksand:wght@300..700&display=swap');
 :root {
   --primary-color: #3d5cb8;
   --primary-color-dark: #334c99;
@@ -60,13 +60,18 @@ body {
 }
 
 nav {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav__logo {
@@ -625,4 +630,8 @@ nav {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.content {
+    font-family: "Quicksand";
 }

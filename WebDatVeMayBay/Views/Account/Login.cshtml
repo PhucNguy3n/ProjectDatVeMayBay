@@ -22,15 +22,35 @@
                 <h1>Đăng ký</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <!-- <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a> -->
                 </div>
                 <span>hoặc đăng ký bằng tài khoản Google</span>
-                <input type="text" placeholder="Tên đăng nhập">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Mật khẩu">
-                <input type="password" placeholder="Nhập lại mật khẩu">
+                <div class="group-input">
+                    <input type="text" placeholder="Tên đăng nhập">
+                    <select id="gender">
+                        <option value="" disabled selected>Giới tính</option>
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                        <option value="other">Khác</option>
+                    </select>
+                </div>
+
+                <div class="group-input">
+                    <input type="text" placeholder="CCCD" />
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="group-input">
+                    <input type="date" placeholder="Ngày sinh" />
+                    <input type="text" placeholder="Số điện thoại" />
+                </div>
+
+                <input type="password" placeholder="Mật khẩu" class="passwordRegister">
+                <input type="password" placeholder="Nhập lại mật khẩu" class="passwordRegister">
+                <div class="password-options">
+                    <label>
+                        <input type="checkbox" id="showPasswordRegister"> Hiện mật khẩu
+                    </label>
+                </div>
                 <button>Đăng ký</button>
             </form>
         </div>
@@ -39,16 +59,13 @@
                 <h1>Đăng nhập</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <!-- <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a> -->
                 </div>
                 <span>hoặc đăng nhập bằng tài khoản Google</span>
                 <input type="email" placeholder="Email / Tên đăng nhập">
-                <input type="password" placeholder="Mật khẩu" id="password">
+                <input type="password" placeholder="Mật khẩu" class="passwordLogin">
                 <div class="password-options">
                     <label>
-                        <input type="checkbox" id="showPassword"> Hiện mật khẩu
+                        <input type="checkbox" id="showPasswordLogin"> Hiện mật khẩu
                     </label>
                     <a href="#">Quên mật khẩu?</a>
                 </div>

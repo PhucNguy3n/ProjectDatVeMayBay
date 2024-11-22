@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -26,6 +26,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 .nav__logo {
@@ -58,9 +60,9 @@ nav {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 768px;
+    width: 1000px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 600px;
 }
 
     .container p {
@@ -110,7 +112,6 @@ nav {
     }
 
     .container input {
-        /* background-color: #eee; */
         border: none;
         margin: 8px 0;
         padding: 15px 15px;
@@ -124,7 +125,6 @@ nav {
     display: flex;
     font-size: 13px;
     color: #333;
-    margin-top: 5px;
     width: 100%;
     justify-content: space-between;
 }
@@ -269,4 +269,21 @@ nav {
 
 .container.active .toggle-right {
     transform: translateX(200%);
+}
+
+.group-input{
+    display:flex;
+    width:100%;
+    gap:10px;
+    align-items:center;
+}
+
+.group-input select{
+    height:45px;
+    border:none;
+    border-radius:8px;
+    padding:0 10px;
+}
+.group-input option{
+    color: #333;
 }

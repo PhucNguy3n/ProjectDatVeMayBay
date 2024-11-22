@@ -104,6 +104,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="CSS\infoTraverler.css" />
     <Content Include="CSS\stylesAdmin.css" />
     <Content Include="CSS\stylesUser.css" />
     <Content Include="Global.asax" />
@@ -178,6 +179,7 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\PassReset.cshtml" />
+    <Content Include="Views\Home\InfoTraveler.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -222,7 +224,8 @@
   </Target>
   <Target Name="BeforeBuild">
     <PropertyGroup>
-      <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
+      <CodeAnalysisRuleSet>
+      </CodeAnalysisRuleSet>
     </PropertyGroup>
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
