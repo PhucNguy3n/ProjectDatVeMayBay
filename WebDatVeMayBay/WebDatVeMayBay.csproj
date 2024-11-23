@@ -109,11 +109,14 @@
     <Content Include="CSS\stylesAdmin.css" />
     <Content Include="CSS\stylesUser.css" />
     <Content Include="Global.asax" />
+    <Content Include="Image\bg.png" />
+    <Content Include="Image\chip.png" />
     <Content Include="Image\client-1.jpg" />
     <Content Include="Image\client-2.jpg" />
     <Content Include="Image\client-3.jpg" />
     <Content Include="Image\client-4.jpg" />
     <Content Include="Image\header.jpg" />
+    <Content Include="Image\logo.png" />
     <Content Include="Image\lounge-1.jpg" />
     <Content Include="Image\lounge-2.jpg" />
     <Content Include="Image\plan-1.jpg" />
