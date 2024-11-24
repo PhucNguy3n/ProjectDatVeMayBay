@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|d:\\websitedatvemaybay\\webdatvemaybay\\webdatvemaybay\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|d:\\websitedatvemaybay\\webdatvemaybay\\webdatvemaybay\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|d:\\websitedatvemaybay\\webdatvemaybay\\webdatvemaybay\\views\\account\\passreset.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\account\\passreset.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\webdatvemaybay\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|d:\\websitedatvemaybay\\webdatvemaybay\\webdatvemaybay\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\webdatvemaybay\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\webdatvemaybay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\webdatvemaybay\\views\\account\\passreset.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\account\\passreset.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebDatVeMayBay\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T08:24:50.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PassReset.cshtml",
               "DocumentMoniker": "D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\WebDatVeMayBay\\Views\\Account\\PassReset.cshtml",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Account\\PassReset.cshtml",
@@ -46,38 +62,36 @@
               "RelativeToolTip": "WebDatVeMayBay\\Views\\Account\\PassReset.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T02:54:01.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T02:54:01.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\WebDatVeMayBay\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Account\\Login.cshtml",
               "ToolTip": "D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\WebDatVeMayBay\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "WebDatVeMayBay\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADYAAAAOAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABsAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T02:53:24.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T02:53:24.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\WebDatVeMayBay\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\Controllers\\AccountController.cs",
               "ToolTip": "D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\WebDatVeMayBay\\Controllers\\AccountController.cs",
               "RelativeToolTip": "WebDatVeMayBay\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBcAAAAiAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T02:53:16.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\WebsiteDatVeMayBay\\WebDatVeMayBay\\WebDatVeMayBay\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Account\\Register.cshtml",
@@ -85,8 +99,7 @@
               "RelativeToolTip": "WebDatVeMayBay\\Views\\Account\\Register.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAF8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T02:52:59.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T02:52:59.701Z"
             }
           ]
         }
