@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&family=Quicksand:wght@300..700&display=swap');
 :root {
   --primary-color: #3d5cb8;
@@ -56,7 +56,7 @@ img {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 nav {
@@ -87,6 +87,16 @@ nav {
   gap: 2rem;
 }
 
+.nav-item {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+    .nav-item.active {
+        background-color: var(--primary-color);
+        color: white;
+    }
 .link a {
   font-weight: 500;
   color: var(--text-light);
@@ -128,10 +138,10 @@ nav {
   cursor: pointer;
 }
 
-.booking__nav span:nth-child(2) {
+/*.booking__nav span:nth-child(2) {
   color: var(--white);
   background-color: var(--primary-color);
-}
+}*/
 
 .booking__container form {
   margin-top: 4rem;
@@ -164,15 +174,15 @@ nav {
 }
 
 .booking__container label {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--text-dark);
-  pointer-events: none;
-  transition: 0.3s;
+    position: absolute;
+    font-size: 0.8rem;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    font-weight: 500;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
 }
 
 .booking__container input {
@@ -183,11 +193,6 @@ nav {
   border: none;
   border-bottom: 1px solid var(--primary-color);
   color: var(--text-dark);
-}
-
-.booking__container input:focus ~ label {
-  font-size: 0.8rem;
-  top: 0;
 }
 
 .booking__container .form__group p {
@@ -635,4 +640,96 @@ nav {
 .content {
     font-family: "Quicksand";
     margin-bottom:60px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    overflow: auto;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chọn hạng máy bay */
+.select-box {
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.selected-option {
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+    padding: 8px;
+    cursor: pointer;
+}
+
+    .option:hover {
+        background-color: #f0f0f0;
+    }
+
+/* Hiển thị box khi người dùng chọn */
+.dropdown.open .options {
+    display: block;
 }

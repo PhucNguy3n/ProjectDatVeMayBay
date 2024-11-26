@@ -107,6 +107,7 @@
     <Content Include="CSS\flightShopping.css" />
     <Content Include="CSS\infoTraverler.css" />
     <Content Include="CSS\stylesAdmin.css" />
+    <Content Include="CSS\stylesChonCB.css" />
     <Content Include="CSS\stylesUser.css" />
     <Content Include="Global.asax" />
     <Content Include="Image\bg.png" />
@@ -133,6 +134,7 @@
     <Content Include="JS\datatables-simple-demo.js" />
     <Content Include="JS\script-login.js" />
     <Content Include="JS\scripts.js" />
+    <Content Include="JS\scriptsCCB.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -150,6 +152,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Views\Home\ChooseFlight.cshtml" />
     <None Include="Views\Home\FlightShopping.cshtml" />
   </ItemGroup>
   <ItemGroup>

@@ -1,97 +1,120 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
 <header class="section__container header__container">
-    <h1 class="section__header">Find And Book<br />A Great Experience</h1>
-    <img src="~/Image/header.jpg" />
+    <h1 class="section__header">Tìm Kiếm Và Đặt Chỗ<br />Cho Một Trải Nghiệm Tuyệt Vời</h1>
+    <img src="~/Image/header.jpg" alt="Hình ảnh đầu trang" />
 </header>
 <section class="section__container booking__container">
     <div class="booking__nav">
-        <span>Economy Class</span>
-        <span>Business Class</span>
-        <span>First Class</span>
+        <span class="nav-item active">Hạng Phổ Thông</span>
+        <span class="nav-item">Hạng Thương Gia</span>
+        <span class="nav-item">Hạng Nhất</span>
     </div>
     <form>
         <div class="form__group">
             <span><i class="ri-map-pin-line"></i></span>
             <div class="input__content">
                 <div class="input__group">
-                    <input type="text" />
-                    <label>Location</label>
+                    <input type="text" onkeyup="this.setAttribute('value', this.value);" value="" />
+                    <label>Điểm khởi hành</label>
                 </div>
-                <p>Where are you going?</p>
+                <p>Bạn muốn đi đâu?</p>
             </div>
         </div>
+        <div class="form__group">
+            <span><i class="ri-map-pin-line"></i></span>
+            <div class="input__content">
+                <div class="input__group">
+                    <input type="text" onkeyup="this.setAttribute('value', this.value);" value="" />
+                    <label>Điểm đến</label>
+                </div>
+                <p>Bạn muốn đến đâu?</p>
+            </div>
+        </div>
+
+        <div class="form__group">
+            <span><i class="ri-calendar-line"></i></span>
+            <div class="input__content">
+                <div class="input__group">
+                    <input type="date" id="departureDate"
+                           onkeyup="this.setAttribute('value', this.value);"
+                           value=""
+                           class="myDate" />
+                    <label>Ngày Khởi Hành</label>
+                </div>
+                <p>Thêm ngày</p>
+            </div>
+        </div>
+        <div class="form__group">
+            <span><i class="ri-calendar-line"></i></span>
+            <div class="input__content">
+                <div class="input__group">
+                    <input type="date" id="returnDate"
+                           onkeyup="this.setAttribute('value', this.value);"
+                           value=""
+                           class="myDate" />
+                    <label>Ngày Trở Về</label>
+                </div>
+                <p>Thêm ngày</p>
+            </div>
+        </div>
+        @*<div class="form__group">
+                <span><i class="ri-user-3-line"></i></span>
+                <div class="input__content">
+                    <div class="input__group">
+                        <input type="text" onkeyup="this.setAttribute('value', this.value);" value="" />
+                        <label>Số Khách</label>
+                    </div>
+                    <p>Thêm khách</p>
+                </div>
+            </div>*@
+        <button class="btn"><i class="ri-search-line"></i></button>
+    </form>
+    <form>
         <div class="form__group">
             <span><i class="ri-user-3-line"></i></span>
             <div class="input__content">
                 <div class="input__group">
-                    <input type="number" />
-                    <label>Travellers</label>
+                    <input type="text" onkeyup="this.setAttribute('value', this.value);" value="" />
+                    <label>Số Khách</label>
                 </div>
-                <p>Add guests</p>
+                <p>Thêm khách</p>
             </div>
         </div>
-        <div class="form__group">
-            <span><i class="ri-calendar-line"></i></span>
-            <div class="input__content">
-                <div class="input__group">
-                    <input type="text" />
-                    <label>Departure</label>
-                </div>
-                <p>Add date</p>
-            </div>
-        </div>
-        <div class="form__group">
-            <span><i class="ri-calendar-line"></i></span>
-            <div class="input__content">
-                <div class="input__group">
-                    <input type="text" />
-                    <label>Return</label>
-                </div>
-                <p>Add date</p>
-            </div>
-        </div>
-        <button class="btn"><i class="ri-search-line"></i></button>
     </form>
+    
 </section>
 
 <section class="section__container plan__container">
-    <p class="subheader">TRAVEL SUPPORT</p>
-    <h2 class="section__header">Plan your travel with confidence</h2>
+    <p class="subheader">HỖ TRỢ DU LỊCH</p>
+    <h2 class="section__header">Lên kế hoạch du lịch tự tin</h2>
     <p class="description">
-        Find help with your bookings and travel plans, and seee what to expect
-        along your journey.
+        Tìm kiếm sự hỗ trợ với đặt chỗ và kế hoạch du lịch, và xem những gì bạn cần chuẩn bị cho hành trình của mình.
     </p>
     <div class="plan__grid">
         <div class="plan__content">
             <span class="number">01</span>
-            <h4>Travel Requirements for Dubai</h4>
+            <h4>Yêu cầu du lịch cho Dubai</h4>
             <p>
-                Stay informed and prepared for your trip to Dubai with essential
-                travel requirements, ensuring a smooth and hassle-free experience in
-                this vibrant and captivating city.
+                Cập nhật thông tin và chuẩn bị cho chuyến đi đến Dubai với các yêu cầu cần thiết, đảm bảo trải nghiệm mượt mà và thuận tiện tại thành phố sôi động này.
             </p>
             <span class="number">02</span>
-            <h4>Multi-risk travel insurance</h4>
+            <h4>Bảo hiểm du lịch đa rủi ro</h4>
             <p>
-                Comprehensive protection for your peace of mind, covering a range of
-                potential travel risks and unexpected situations.
+                Bảo vệ toàn diện để bạn yên tâm, bao gồm nhiều rủi ro tiềm năng và các tình huống bất ngờ.
             </p>
             <span class="number">03</span>
-            <h4>Travel Requirements by destinations</h4>
+            <h4>Yêu cầu du lịch theo điểm đến</h4>
             <p>
-                Stay informed and plan your trip with ease, as we provide up-to-date
-                information on travel requirements specific to your desired
-                destinations.
+                Luôn được cập nhật và lên kế hoạch dễ dàng với thông tin yêu cầu du lịch cụ thể cho điểm đến của bạn.
             </p>
         </div>
         <div class="plan__image">
-            <img src="assets/plan-1.jpg" alt="plan" />
-            <img src="~/Image/plan-2.jpg" />
-            <img src="~/Image/plan-3.jpg" />
+            <img src="~/Image/plan-1.jpg" alt="Kế hoạch 1" />
+            <img src="~/Image/plan-2.jpg" alt="Kế hoạch 2" />
+            <img src="~/Image/plan-3.jpg" alt="Kế hoạch 3" />
         </div>
     </div>
 </section>
@@ -100,33 +123,30 @@
     <div class="section__container memories__container">
         <div class="memories__header">
             <h2 class="section__header">
-                Travel to make memories all around the world
+                Du lịch để tạo nên kỷ niệm khắp thế giới
             </h2>
-            <button class="view__all">View All</button>
+            <button class="view__all">Xem Tất Cả</button>
         </div>
         <div class="memories__grid">
             <div class="memories__card">
                 <span><i class="ri-calendar-2-line"></i></span>
-                <h4>Book & relax</h4>
+                <h4>Đặt chỗ & thư giãn</h4>
                 <p>
-                    With "Book and Relax," you can sit back, unwind, and enjoy the
-                    journey while we take care of everything else.
+                    Với "Đặt chỗ và Thư giãn", bạn có thể ngồi lại, thư giãn và tận hưởng hành trình trong khi chúng tôi lo phần còn lại.
                 </p>
             </div>
             <div class="memories__card">
                 <span><i class="ri-shield-check-line"></i></span>
-                <h4>Smart Checklist</h4>
+                <h4>Danh sách thông minh</h4>
                 <p>
-                    Introducing Smart Checklist with us, the innovative solution
-                    revolutionizing the way you travel with our airline.
+                    Cùng chúng tôi giới thiệu Danh Sách Thông Minh, giải pháp sáng tạo thay đổi cách bạn đi du lịch.
                 </p>
             </div>
             <div class="memories__card">
                 <span><i class="ri-bookmark-2-line"></i></span>
-                <h4>Save More</h4>
+                <h4>Tiết kiệm hơn</h4>
                 <p>
-                    From discounted ticket prices to exclusive promotions and deals,
-                    we prioritize affordability without compromising on quality.
+                    Từ vé giảm giá đến khuyến mãi độc quyền, chúng tôi luôn ưu tiên sự tiết kiệm mà vẫn đảm bảo chất lượng.
                 </p>
             </div>
         </div>
@@ -135,38 +155,34 @@
 
 <section class="section__container lounge__container">
     <div class="lounge__image">
-        <img src="~/Image/lounge-1.jpg" />
-        <img src="~/Image/lounge-2.jpg" />
+        <img src="~/Image/lounge-1.jpg" alt="Phòng chờ 1" />
+        <img src="~/Image/lounge-2.jpg" alt="Phòng chờ 2" />
     </div>
     <div class="lounge__content">
-        <h2 class="section__header">Unaccompanied Minor Lounge</h2>
+        <h2 class="section__header">Phòng chờ dành cho trẻ vị thành niên</h2>
         <div class="lounge__grid">
             <div class="lounge__details">
-                <h4>Experience Tranquility</h4>
+                <h4>Trải nghiệm yên bình</h4>
                 <p>
-                    Serenity Haven offers a tranquil escape, featuring comfortable
-                    seating, calming ambiance, and attentive service.
+                    Nơi trú ẩn yên bình với không gian thoải mái, không khí thư giãn và dịch vụ tận tình.
                 </p>
             </div>
             <div class="lounge__details">
-                <h4>Elevate Your Experience</h4>
+                <h4>Nâng tầm trải nghiệm</h4>
                 <p>
-                    Designed for discerning travelers, this exclusive lounge offers
-                    premium amenities, assistance, and private workspaces.
+                    Dành cho khách hàng khó tính, phòng chờ này cung cấp tiện ích cao cấp và không gian làm việc riêng.
                 </p>
             </div>
             <div class="lounge__details">
-                <h4>A Welcoming Space</h4>
+                <h4>Không gian chào đón</h4>
                 <p>
-                    Creating a family-friendly atmosphere, The Family Zone is the
-                    perfect haven for parents and children.
+                    Tạo không gian thân thiện với gia đình, là nơi lý tưởng cho cha mẹ và trẻ em.
                 </p>
             </div>
             <div class="lounge__details">
-                <h4>A Culinary Delight</h4>
+                <h4>Ẩm thực đỉnh cao</h4>
                 <p>
-                    Immerse yourself in a world of flavors, offering international
-                    cuisines, gourmet dishes, and carefully curated beverages.
+                    Thưởng thức các món ăn quốc tế, món ăn cao cấp và đồ uống tinh tế được chọn lọc kỹ lưỡng.
                 </p>
             </div>
         </div>
@@ -174,50 +190,55 @@
 </section>
 
 <section class="section__container travellers__container">
-    <h2 class="section__header">Best travellers of the month</h2>
+    <h2 class="section__header">Những khách du lịch xuất sắc nhất trong tháng</h2>
     <div class="travellers__grid">
         <div class="travellers__card">
-            <img src="~/Image/traveller-1.jpg" />
+            <img src="~/Image/traveller-1.jpg" alt="Khách du lịch 1" />
             <div class="travellers__card__content">
-                <img src="~/Image/client-1.jpg" />
+                <img src="~/Image/client-1.jpg" alt="Khách hàng 1" />
                 <h4>Emily Johnson</h4>
                 <p>Dubai</p>
             </div>
         </div>
         <div class="travellers__card">
-            <img src="~/Image/traveller-2.jpg" />
+            <img src="~/Image/traveller-2.jpg" alt="Khách du lịch 2" />
             <div class="travellers__card__content">
-                <img src="~/Image/client-2.jpg" />
+                <img src="~/Image/client-2.jpg" alt="Khách hàng 2" />
                 <h4>David Smith</h4>
                 <p>Paris</p>
             </div>
         </div>
         <div class="travellers__card">
-            <img src="~/Image/traveller-3.jpg" />
+            <img src="~/Image/traveller-3.jpg" alt="Khách du lịch 3" />
             <div class="travellers__card__content">
-                <img src="~/Image/client-3.jpg" />
+                <img src="~/Image/client-3.jpg" alt="Khách hàng 3" />
                 <h4>Olivia Brown</h4>
                 <p>Singapore</p>
             </div>
         </div>
         <div class="travellers__card">
-            <img src="~/Image/traveller-4.jpg" />
+            <img src="~/Image/traveller-4.jpg" alt="Khách du lịch 4" />
             <div class="travellers__card__content">
-                <img src="~/Image/client-4.jpg" />
-                <h4>Daniel Taylor</h4>
-                <p>Malaysia</p>
+                <img src="~/Image/client-4.jpg" alt="Khách hàng 4" />
+                <h4>Michael Lee</h4>
+                <p>Tokyo</p>
             </div>
         </div>
     </div>
-</section>
+    <script>
+        function getNowDate() {
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
 
-<section class="subscribe">
-    <div class="section__container subscribe__container">
-        <h2 class="section__header">Subscribe newsletter & get latest news</h2>
-        <form class="subscribe__form">
-            <input type="text" placeholder="Enter your email here" />
-            <button class="btn">Subscribe</button>
-        </form>
-    </div>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateInputs = document.querySelectorAll('.myDate');
+            dateInputs.forEach(item => {
+                item.setAttribute('min', getNowDate());
+            })
+        });
+    </script>
 </section>
-

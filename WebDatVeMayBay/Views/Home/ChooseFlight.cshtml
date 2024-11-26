@@ -1,0 +1,334 @@
+﻿
+@{
+    ViewBag.Title = "ChooseFlight";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<link href="~/CSS/stylesChonCB.css" rel="stylesheet" />
+<div class="container">
+    <div class="background-image">
+        <h1>Chọn Vé Máy Bay</h1>
+    </div>
+    <div class="header-section">
+        <div class="summary">
+            <span id="summary-departure" style="font-weight: bold">Hà Nội</span>
+            <span>→</span>
+            <span id="summary-destination" style="font-weight: bold">Hồ Chí Minh</span>
+        </div>
+        <div class="summary">
+            <span id="summary-date">2024-11-25</span>
+            <span>|</span>
+            <span id="summary-passengers">Hành khách: 1</span>
+            <span>|</span>
+            <span id="summary-class">Phổ thông</span>
+        </div>
+        <button id="change-btn">Thay đổi tìm kiếm</button>
+    </div>
+    <!-- Phần 1: Tìm kiếm chuyến bay -->
+    <div class="search-section hidden">
+        <div class="search-fields">
+            <div class="field-group">
+                <div class="field">
+                    <input type="radio" id="one-way" name="trip-type" value="one-way">
+                    <label for="one-way">Một chiều</label>
+                </div>
+                <div class="field">
+                    <input type="radio" id="round-trip" name="trip-type" value="round-trip">
+                    <label for="round-trip">Khứ hồi</label>
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="departure">Nơi đi:</label>
+                    <input type="text" id="departure" placeholder="Nhập nơi đi">
+                </div>
+                <div class="field">
+                    <label for="destination">Nơi đến:</label>
+                    <input type="text" id="destination" placeholder="Nhập nơi đến">
+                </div>
+                <div class="field">
+                    <label for="departure-date">Ngày đi:</label>
+                    <input type="date" id="departure-date" placeholder="Nhập ngày đi">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="return-date">Ngày về:</label>
+                    <input type="date" id="return-date" placeholder="Nhập ngày về">
+                </div>
+                <div class="field">
+                    <label for="passenger-count">Số lượng hành khách:</label>
+                    <input type="text" id="passengers" placeholder="" readonly>
+                    <div id="passenger-panel" class="passenger-panel hidden bg-body">
+                        <div class="passenger-category">
+                            <span>Người lớn</span>
+                            <div class="passenger-controls">
+                                <button class="decrease">-</button>
+                                <span class="count">0</span>
+                                <button class="increase">+</button>
+                            </div>
+                        </div>
+                        <div class="passenger-category">
+                            <span>Trẻ em</span>
+                            <div class="passenger-controls">
+                                <button class="decrease">-</button>
+                                <span class="count">0</span>
+                                <button class="increase">+</button>
+                            </div>
+                        </div>
+                        <div class="passenger-category">
+                            <span>Em bé</span>
+                            <div class="passenger-controls">
+                                <button class="decrease">-</button>
+                                <span class="count">0</span>
+                                <button class="increase">+</button>
+                            </div>
+                        </div>
+                        <button id="confirm-passengers">Xong</button>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="ticket-class">Hạng vé:</label>
+                    <select id="ticket-class">
+                        <option value="economy">Phổ thông</option>
+                        <option value="business">Thương gia</option>
+                        <option value="first-class">Hạng nhất</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="search-btn">Tìm kiếm</button>
+        </div>
+    </div>
+
+    <!-- Phần 2: Bộ lọc -->
+    <div class="filter">
+        <div class="filter-header">
+            <button id="toggle-filter-btn">Hiển thị bộ lọc</button>
+            <div class="filter-content hidden">
+                <div class="filter-item">
+                    <button class="filter-title" data-target="#price">
+                        GIÁ <i class="arrow down"></i>
+                    </button>
+                    <div id="price" class="filter-detail">
+                        <input type="range" id="priceRange" min="1500000" max="15000000" step="500000">
+                        <span id="priceValue">1,500,000</span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="filter-item">
+                    <button class="filter-title" data-target="#stop">
+                        ĐIỂM DỪNG <i class="arrow down"></i>
+                    </button>
+                    <div id="stop" class="filter-detail">
+                        <label><input type="radio" name="stop" value="direct"> Bay thẳng</label><br>
+                        <label><input type="radio" name="stop" value="1stop"> 1 điểm dừng</label><br>
+                        <label><input type="radio" name="stop" value="2stop"> Trên 2 điểm dừng</label>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="filter-item">
+                    <button class="filter-title" data-target="#time">
+                        GIỜ BAY <i class="arrow down"></i>
+                    </button>
+                    <div id="time" class="filter-detail">
+                        <h5>GIỜ CẤP CÁNH</h5>
+                        <label><input type="radio" name="takeoff" value="00-06"> 00:00 - 06:00 Sáng</label><br>
+                        <label><input type="radio" name="takeoff" value="06-12"> 06:00 - 12:00 Trưa</label><br>
+                        <label><input type="radio" name="takeoff" value="12-18"> 12:00 - 18:00 Tối</label><br>
+                        <label><input type="radio" name="takeoff" value="18-24"> 18:00 - 24:00 Đêm</label>
+                        <hr>
+                        <h5>GIỜ HẠ CÁNH</h5>
+                        <label><input type="radio" name="landing" value="00-06"> 00:00 - 06:00 Sáng</label><br>
+                        <label><input type="radio" name="landing" value="06-12"> 06:00 - 12:00 Trưa</label><br>
+                        <label><input type="radio" name="landing" value="12-18"> 12:00 - 18:00 Tối</label><br>
+                        <label><input type="radio" name="landing" value="18-24"> 18:00 - 24:00 Đêm</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phần 3: Danh sách chuyến bay -->
+    <div id="flight-list"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Dữ liệu giả lập từ backend
+            const flights = [
+                {
+                    time_depart: "18:40",
+                    location_depart: "SGN",
+                    terminal_depart: "Nhà ga 1",
+                    time_arrive: "20:00",
+                    location_arrive: "DAD",
+                    terminal_arrive: "Nhà ga 1",
+                    flight_number: "VN 1340",
+                    duration: "1h 10 phút",
+                    aircraft: "AIRBUS A321",
+                    provider: "Gumball"
+                },
+                {
+                    time_depart: "19:00",
+                    location_depart: "HAN",
+                    terminal_depart: "Nhà ga 2",
+                    time_arrive: "21:10",
+                    location_arrive: "CXR",
+                    terminal_arrive: "Nhà ga 1",
+                    flight_number: "VN 245",
+                    duration: "2h 10 phút",
+                    aircraft: "AIRBUS A321",
+                    provider: "Gumball"
+                },
+                {
+                    "time_depart": "08:30",
+                    "location_depart": "SGN",
+                    "terminal_depart": "Nhà ga 2",
+                    "time_arrive": "10:00",
+                    "location_arrive": "CXR",
+                    "terminal_arrive": "Nhà ga 1",
+                    "flight_number": "VN 1280",
+                    "duration": "1h 30 phút",
+                    "aircraft": "BOEING 737",
+                    "provider": "Gumball"
+                },
+                {
+                    "time_depart": "10:45",
+                    "location_depart": "DAD",
+                    "terminal_depart": "Nhà ga 1",
+                    "time_arrive": "12:30",
+                    "location_arrive": "SGN",
+                    "terminal_arrive": "Nhà ga 2",
+                    "flight_number": "VN 185",
+                    "duration": "1h 45 phút",
+                    "aircraft": "AIRBUS A320",
+                    "provider": "Gumball"
+                },
+                {
+                    "time_depart": "14:00",
+                    "location_depart": "HAN",
+                    "terminal_depart": "Nhà ga 1",
+                    "time_arrive": "16:20",
+                    "location_arrive": "DAD",
+                    "terminal_arrive": "Nhà ga 2",
+                    "flight_number": "VN 350",
+                    "duration": "2h 20 phút",
+                    "aircraft": "AIRBUS A321",
+                    "provider": "Gumball"
+                },
+                {
+                    "time_depart": "16:10",
+                    "location_depart": "CXR",
+                    "terminal_depart": "Nhà ga 1",
+                    "time_arrive": "18:00",
+                    "location_arrive": "HAN",
+                    "terminal_arrive": "Nhà ga 2",
+                    "flight_number": "VN 225",
+                    "duration": "1h 50 phút",
+                    "aircraft": "BOEING 737",
+                    "provider": "Gumball"
+                },
+                {
+                    "time_depart": "18:30",
+                    "location_depart": "SGN",
+                    "terminal_depart": "Nhà ga 1",
+                    "time_arrive": "20:00",
+                    "location_arrive": "DAD",
+                    "terminal_arrive": "Nhà ga 2",
+                    "flight_number": "VN 220",
+                    "duration": "1h 30 phút",
+                    "aircraft": "AIRBUS A321",
+                    "provider": "Gumball"
+                }
+            ];
+
+            const flightList = document.getElementById("flight-list");
+
+            flights.forEach((flight, index) => {
+                // Tạo HTML động cho từng chuyến bay
+                const flightHTML = `
+                    <div class="flight-container">
+                        <div class="details-place">
+                            <div class="column">
+                                <p>${flight.time_depart}</p>
+                                <p>${flight.location_depart}</p>
+                                <p>${flight.terminal_depart}</p>
+                            </div>
+                            <div class="middle">
+                                <p>Bay thẳng</p>
+                                <div class="dotted-line"></div>
+                            </div>
+                            <div class="column">
+                                <p>${flight.time_arrive}</p>
+                                <p>${flight.location_arrive}</p>
+                                <p>${flight.terminal_arrive}</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <span>⏱ Thời gian bay ${flight.duration}</span>
+                            <br>
+                            <span>✈️ ${flight.flight_number} Khai thác bởi ${flight.provider} <span class="logo">🍂</span></span>
+                            <br>
+                            <a href="#" class="details-link" id="showPopup-${index + 1}">Chi tiết hành trình</a>
+                        </div>
+                        <div class="price-info">
+                            <div class="economy">
+                                <button class="price-btn">Chọn</button>
+                            </div>
+                        </div>
+
+                        <div class="popup" id="popup-${index + 1}">
+                            <div class="popup-content">
+                                <button class="close-btn" id="closeBtn-${index + 1}">×</button>
+                                <h2>${flight.location_depart} - ${flight.location_arrive}</h2>
+                                <p>Khởi hành vào Thứ Ba, 26 tháng 11, 2024</p>
+                                <p><strong>Tổng thời gian ${flight.duration}</strong></p>
+                                <div class="flight-details">
+                                    <div class="timeline">
+                                        <span class="time">${flight.time_depart} ${flight.location_depart}</span>
+                                        <span class="sub-text">${flight.terminal_depart}</span>
+                                        <span class="duration">${flight.duration}</span>
+                                        <span class="time">${flight.time_arrive} ${flight.location_arrive}</span>
+                                        <span class="sub-text">${flight.terminal_arrive}</span>
+                                    </div>
+                                    <p>Số hiệu chuyến bay <strong>${flight.flight_number}</strong></p>
+                                    <p>Khai thác bởi ${flight.provider} <span class="logo">${flight.logo}</span></p>
+                                    <p>${flight.aircraft}</p>
+                                </div>
+                                <button class="close-popup-btn">ĐÓNG</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                flightList.innerHTML += flightHTML;
+            });
+
+            // Gắn sự kiện cho các popup
+            flights.forEach((_, index) => {
+                const detailsLink = document.getElementById(`showPopup-${index + 1}`);
+                const popup = document.getElementById(`popup-${index + 1}`);
+                const closeBtn = document.getElementById(`closeBtn-${index + 1}`);
+                const closePopupBtn = popup.querySelector(".close-popup-btn");
+
+                detailsLink.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    popup.style.display = "flex";
+                });
+
+                closeBtn.addEventListener("click", () => {
+                    popup.style.display = "none";
+                });
+
+                closePopupBtn.addEventListener("click", () => {
+                    popup.style.display = "none";
+                });
+            });
+        });
+    </script>
+
+</div>
+<script src="~/JS/scriptsCCB.js"></script>
+

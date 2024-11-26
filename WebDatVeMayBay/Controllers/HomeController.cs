@@ -23,6 +23,9 @@ namespace WebDatVeMayBay.Controllers
         {
             return View();
         }
-
+        public ActionResult ChooseFlight()
+        {
+            return View();
+        }
     }
 }
