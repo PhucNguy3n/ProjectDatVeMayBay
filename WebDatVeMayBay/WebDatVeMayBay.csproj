@@ -132,6 +132,7 @@
     <Content Include="JS\chart-pie-demo.js" />
     <Content Include="JS\datatables-demo.js" />
     <Content Include="JS\datatables-simple-demo.js" />
+    <Content Include="JS\script-admin.js" />
     <Content Include="JS\script-login.js" />
     <Content Include="JS\scripts.js" />
     <Content Include="JS\scriptsCCB.js" />
