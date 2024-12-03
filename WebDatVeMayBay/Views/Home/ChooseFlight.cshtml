@@ -1,0 +1,281 @@
+﻿@model List<WebDatVeMayBay.Models.ChuyenBay>
+@{
+    ViewBag.Title = "ChooseFlight";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<link href="~/CSS/stylesChonCB.css" rel="stylesheet" />
+
+<style>
+    #flight-list {
+        margin: 30px auto;
+        width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'Arial', sans-serif;
+        text-align: left;
+    }
+        .table th, .table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        .table th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        .table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .table tbody tr:hover {
+            background-color: #e1e1e1;
+            cursor: pointer;
+        }
+        .table td {
+            vertical-align: middle;
+        }
+    .text-center {
+        text-align: center;
+    }
+    .table-bordered td, .table-bordered th {
+        border: 1px solid #ddd;
+    }
+
+    .table-striped tbody tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+</style>
+<div class="container">
+    <div class="background-image">
+        <h1>Chọn Vé Máy Bay</h1>
+    </div>
+    <div class="header-section">
+        <div class="summary">
+            <span id="summary-departure" style="font-weight: bold">Hà Nội</span>
+            <span>→</span>
+            <span id="summary-destination" style="font-weight: bold">Hồ Chí Minh</span>
+        </div>
+        <div class="summary">
+            <span id="summary-date">2024-11-25</span>
+            <span>|</span>
+            <span id="summary-passengers">Hành khách: 1</span>
+            <span>|</span>
+            <span id="summary-class">Phổ thông</span>
+        </div>
+        <button id="change-btn">Thay đổi tìm kiếm</button>
+    </div>
+    <!-- Phần 1: Tìm kiếm chuyến bay -->
+    <div class="search-section hidden">
+        <div class="search-fields">
+            <div class="field-group">
+                <div class="field">
+                    <input type="radio" id="one-way" name="trip-type" value="one-way">
+                    <label for="one-way">Một chiều</label>
+                </div>
+                <div class="field">
+                    <input type="radio" id="round-trip" name="trip-type" value="round-trip">
+                    <label for="round-trip">Khứ hồi</label>
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="departure">Nơi đi:</label>
+                    <input type="text" id="departure" placeholder="Nhập nơi đi">
+                </div>
+                <div class="field">
+                    <label for="destination">Nơi đến:</label>
+                    <input type="text" id="destination" placeholder="Nhập nơi đến">
+                </div>
+                <div class="field">
+                    <label for="departure-date">Ngày đi:</label>
+                    <input type="date" id="departure-date" placeholder="Nhập ngày đi">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="return-date">Ngày về:</label>
+                    <input type="date" id="return-date" placeholder="Nhập ngày về">
+                </div>
+                <div class="field">
+                    <label for="passenger-count">Số lượng hành khách:</label>
+                    <input type="text" id="passengers" placeholder="" readonly>
+                    <div id="passenger-panel" class="passenger-panel hidden bg-body">
+                        <div class="passenger-category">
+                            <span>Người lớn</span>
+                            <div class="passenger-controls">
+                                <button class="decrease">-</button>
+                                <span class="count">0</span>
+                                <button class="increase">+</button>
+                            </div>
+                        </div>
+                        <div class="passenger-category">
+                            <span>Trẻ em</span>
+                            <div class="passenger-controls">
+                                <button class="decrease">-</button>
+                                <span class="count">0</span>
+                                <button class="increase">+</button>
+                            </div>
+                        </div>
+                        <div class="passenger-category">
+                            <span>Em bé</span>
+                            <div class="passenger-controls">
+                                <button class="decrease">-</button>
+                                <span class="count">0</span>
+                                <button class="increase">+</button>
+                            </div>
+                        </div>
+                        <button id="confirm-passengers">Xong</button>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="ticket-class">Hạng vé:</label>
+                    <select id="ticket-class">
+                        <option value="economy">Phổ thông</option>
+                        <option value="business">Thương gia</option>
+                        <option value="first-class">Hạng nhất</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="search-btn">Tìm kiếm</button>
+        </div>
+    </div>
+
+    <!-- Phần 2: Bộ lọc -->
+    <div class="filter">
+        <div class="filter-header">
+            <button id="toggle-filter-btn">Hiển thị bộ lọc</button>
+            <div class="filter-content hidden">
+                <div class="filter-item">
+                    <button class="filter-title" data-target="#price">
+                        GIÁ <i class="arrow down"></i>
+                    </button>
+                    <div id="price" class="filter-detail">
+                        <input type="range" id="priceRange" min="1500000" max="15000000" step="500000">
+                        <span id="priceValue">1,500,000</span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="filter-item">
+                    <button class="filter-title" data-target="#stop">
+                        ĐIỂM DỪNG <i class="arrow down"></i>
+                    </button>
+                    <div id="stop" class="filter-detail">
+                        <label><input type="radio" name="stop" value="direct"> Bay thẳng</label><br>
+                        <label><input type="radio" name="stop" value="1stop"> 1 điểm dừng</label><br>
+                        <label><input type="radio" name="stop" value="2stop"> Trên 2 điểm dừng</label>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="filter-item">
+                    <button class="filter-title" data-target="#time">
+                        GIỜ BAY <i class="arrow down"></i>
+                    </button>
+                    <div id="time" class="filter-detail">
+                        <h5>GIỜ CẤP CÁNH</h5>
+                        <label><input type="radio" name="takeoff" value="00-06"> 00:00 - 06:00 Sáng</label><br>
+                        <label><input type="radio" name="takeoff" value="06-12"> 06:00 - 12:00 Trưa</label><br>
+                        <label><input type="radio" name="takeoff" value="12-18"> 12:00 - 18:00 Tối</label><br>
+                        <label><input type="radio" name="takeoff" value="18-24"> 18:00 - 24:00 Đêm</label>
+                        <hr>
+                        <h5>GIỜ HẠ CÁNH</h5>
+                        <label><input type="radio" name="landing" value="00-06"> 00:00 - 06:00 Sáng</label><br>
+                        <label><input type="radio" name="landing" value="06-12"> 06:00 - 12:00 Trưa</label><br>
+                        <label><input type="radio" name="landing" value="12-18"> 12:00 - 18:00 Tối</label><br>
+                        <label><input type="radio" name="landing" value="18-24"> 18:00 - 24:00 Đêm</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phần 3: Danh sách chuyến bay -->
+    <div id="flight-list">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Mã chuyến bay</th>
+                    <th>Điểm đi</th>
+                    <th>Điểm đến</th>
+                    <th>Thời gian khởi hành</th>
+                    <th>Thời gian đến</th>
+                    <th>Khoảng cách</th>
+                    <th>Giá chuyến bay</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var flight in Model)
+                    {
+                        <tr>
+                            <td>@flight.MaChuyenBay</td>
+                            <td>@flight.DiemDi</td>
+                            <td>@flight.DiemDen</td>
+                            <td>@flight.ThoiGianKhoiHanh.ToString("yyyy-MM-dd HH:mm")</td>
+                            <td>@flight.ThoiGianDen.ToString("yyyy-MM-dd HH:mm")</td>
+                            <td>@flight.ThoiGianBayDuTinh</td>
+                            <td>@flight.GiaChuyenBay.ToString("#,0") VNĐ</td>
+                            <td>
+                                <!-- Sử dụng form để gửi mã chuyến bay -->
+                                <form action="@Url.Action("ChonChuyenBay", "Home")" method="post">
+                                    <input type="hidden" name="maChuyenBay" value="@flight.MaChuyenBay" />
+                                    <button type="submit" class="btn btn-primary">Chọn chuyến</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="7" class="text-center">Không có dữ liệu chuyến bay.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <script>
+        // Gắn sự kiện cho các popup
+        flights.forEach((_, index) => {
+            const detailsLink = document.getElementById(`showPopup-${index + 1}`);
+            const popup = document.getElementById(`popup-${index + 1}`);
+            const closeBtn = document.getElementById(`closeBtn-${index + 1}`);
+            const closePopupBtn = popup.querySelector(".close-popup-btn");
+
+            detailsLink.addEventListener("click", (e) => {
+                e.preventDefault();
+                popup.style.display = "flex";
+            });
+
+            closeBtn.addEventListener("click", () => {
+                popup.style.display = "none";
+            });
+
+            closePopupBtn.addEventListener("click", () => {
+                popup.style.display = "none";
+            });
+        });
+                });
+    </script>
+
+</div>
+<script src="~/JS/scriptsCCB.js"></script>
+

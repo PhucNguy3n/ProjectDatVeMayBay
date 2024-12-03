@@ -1,0 +1,367 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+<link rel="stylesheet" href="~/CSS/flightShopping.css" />
+
+<div class="wrapper">
+      <h1>Thanh toán</h1>
+      
+
+      <div class="faq">
+        <div class="warn">
+            <p>
+            <b>Lưu ý :</b> Vietnam Airlines đặt trụ sở tại Việt Nam. Tùy theo chính sách của mình,
+                ngân hàng phát hành thẻ có thể thu phí trên mỗi giao dịch của Quý khách. 
+                Vietnam Airlines tuyệt đối không chịu trách nhiệm khi phát sinh bất kỳ khoản phí nào liên quan 
+                đến việc sử dụng thẻ để thanh toán tại website của Vietnam Airlines. 
+                Quý khách nên trực tiếp liên hệ với ngân hàng phát hành thẻ để có đầy đủ thông tin về chi phí phát sinh.
+            </p>
+            <p>
+                Vui lòng không ấn quay lại hoặc tắt trình duyệt trong quá trình thanh toán.
+            </p>
+            <p>
+                Sau khi thanh toán thành công, Quý khách sẽ được chuyển đến trang xác nhận đặt chỗ. 
+                Email xác nhận sẽ được gửi tới Quý khách trong vòng 1 tiếng . 
+                Nếu không nhận được thưu xác nhận, Quý khách vui lòng liên hệ 24/7: 1900-1100 hoặc +84 24 38320320 (dành cho các cuộc gọi từ ngoài Việt Nam).
+            </p>
+        </div>
+      </div>
+
+
+      <h3>Các chuyến bay</h3>
+      <div class="faq">
+        <button class="accordion">
+            <div class="details">
+                <div class="details-header">
+                    TP. Hồ Chí Minh đến Đà Nẵng - Thứ bảy, 23 tháng 11, 2024
+                </div>
+                <hr></hr>
+                <div class="details-content">
+                    <div class="details-place">
+                        <div class="column">
+                            <p>18:40</p>
+                            <p>SGN</p>
+                            <p>Nhà ga 1</p>
+                        </div>
+                        <div class="middle">
+                            <p>Bay thẳng</p>
+                            <div class="dotted-line"></div>
+                        </div>
+                        <div class="column">
+                            <p>20:00</p>
+                            <p>DAD</p>
+                            <p>Nhà ga 1</p>
+                        </div>
+                    </div>
+                   <div class="details-time">
+                        <div>
+                            <i class="fa-solid fa-stopwatch"></i>
+                            <p>Thời gian bay 1h 20phút</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plane"></i>
+                            <p>VN 136 khai thác bởi VietNam Airlines</p>
+                        </div>
+                    </div>
+
+                    <div class="details-type">
+                        <h3>Phổ Thông Tiết Kiệm</h3>
+                    </div>
+                </div>
+            </div>
+            <hr>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <div class="journey-timeline">
+                <div class="journey-header">
+                    <h3>Chi tiết hành trình</h3>
+                    <p>1 giờ 20 phút</p>
+                </div>
+                <div class="journey-step">
+                    <div class="timeline-dot"></div>
+                    <div class="step-content">
+                        <p><strong>18:40</strong> TP. Hồ Chí Minh</p>
+                        <p>Sân bay Tân Sơn Nhất, Việt Nam</p>
+                        <p>Nhà ga 1</p>
+                    </div>
+                </div>
+                <div class="timeline-line"></div>
+                <div class="journey-step">
+                    <div class="timeline-dot"></div>
+                    <div class="step-content">
+                        <p><strong>20:00</strong> Đà Nẵng</p>
+                        <p>Sân bay Đà Nẵng, Việt Nam</p>
+                        <p>Nhà ga 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lock">
+                <i class="fa-solid fa-lock"></i>
+                <p>Lựa chọn chuyến bay và giá vé của Quý khách đã được bảo mật. Để thay đổi, vui lòng đặt vé mới.</p>
+            </div>
+        </div>
+      </div>
+      <h2>Tổng số tiền: 1.616.000 VND</h2>
+
+      <h3>Hành khách</h3>
+      <div class="faq">
+            <button class="accordion">
+                <div class="group-name">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <div class="name">
+                        <div class="row-header">Tên hành khách</div>
+                        <div class="row">Người lớn</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+               <hr style="width: 90%; margin-left: 20px"></hr>
+                <div class="info-user">
+                    <!-- Cột info -->
+                    <div class="info">
+                        <div class="row-title">Thông tin cá nhân</div>
+
+                        <div class="row-header">Tên hành khách</div>
+                        <div class="row">dd/mm/yyyy</div>
+
+                    </div>
+                    <!-- Cột contact -->
+                    <div class="contact">
+                        <div class="row-title">Thông tin liên lạc</div>
+
+                        <div class="row-header">Email</div>
+                        <div class="row">example@gmail.com</div>
+
+                        <div class="row-header">Số điện thoại</div>
+                        <div class="row">0123456789</div>
+                    </div>
+                </div>
+            </div>
+      </div>
+        <h2>Tổng số tiền: ???</h2>
+        <p style="text-align:right;">Tổng giá cho tất cả các hành khác (đã bao gồm thuế, phí và chiết khấu).</p>
+
+
+      <h3>Vui lòng chọn hình thức thanh toán</h3>
+      <div class="faq">
+        <button class="accordion">
+          <h3>Quét mã VietQR</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <hr style="width: 90%; margin-left: 20px"></hr>
+            <div class="pay-content">
+                <p>
+                    Quý khách sẽ được chuyển sang trang thanh toán của Ngân hàng Quân đội (MB) cùng với
+                    mã VietQR và danh sách các ngân hàng hỗ trợ thanh toán.
+                </p>
+                <p>Vui lòng sử dụng chức năng Scan QR hoặc QR Pay trên ứng dụng của bất kỳ ngân hàng nào trong danh sách để quét và thanh toán.</p>
+            </div>
+            <!-- Form thanh toán -->
+            <form method="post" action="@Url.Action("ThanhToan", "Home")">
+                <div class="payment">
+                    <button type="submit" class="btn-pay">Thanh toán</button>
+                </div>
+            </form>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          <h3>Ví điện tử Momo</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <hr style="width: 90%; margin-left: 20px"></hr>
+            <div class="pay-content">
+                <p>
+                    Quý khách sẽ được chuyển hướng sang trang web của MoMo để thanh toán. Quý khách vui lòng xác nhận đã đọc và đồng ý với các điều kiện bên dưới.
+                    Với các giao dịch trên 50.000.000 VNĐ, Quý khách vui lòng chọn hình thức thanh toán khác
+                </p>
+            </div>
+            <!-- Form thanh toán -->
+            <form method="post" action="@Url.Action("ThanhToan", "Home")">
+                <div class="payment">
+                    <button type="submit" class="btn-pay">Thanh toán</button>
+                </div>
+            </form>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            <div class="group-name-pay">
+                <h3>VN QR Pay and Internet banking</h3>
+                <p>Tặng 50K cho đơn từ 5 triệu VND, tặng 100K cho đơn từ 8 triệu VND và tặng 200K cho đơn từ 12 triệu VND khi thanh toán bằng VNPay-QR với mã VNPAYWINTER.</p>
+            </div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <hr style="width: 90%; margin-left: 20px"></hr>
+            <div class="pay-content">
+                <p>
+                    Quý khách sẽ được chuyển sang trang của VNPAY để thanh toán.
+                    VNPAY là cổng thanh toán nội địa của Vietnam Airlines.
+                    Các hình thức thanh toán qua cổng thanh toán VNPAY bao gồm:
+                </p>
+                <p> - Sử dụng tính năng QR PAY trên Mobile Banking App của Ngân hàng, quét mã QR để thanh toán. </p>
+                <p> - Thanh toán bằng Internet Banking và tài khoản ngân hàng. <p>
+            </div>
+            <!-- Form thanh toán -->
+            <form method="post" action="@Url.Action("ThanhToan", "Home")">
+                <div class="payment">
+                    <button type="submit" class="btn-pay">Thanh toán</button>
+                </div>
+            </form>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            <h3>Thẻ nội địa ( ATM ) NAPAS</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <hr style="width: 90%; margin-left: 20px"></hr>
+            <div class="pay-content">
+                <p>Chúng tôi chấp nhận thanh toán ngay bằng các hình thức:</p>
+
+                <p>
+                    - Thẻ nội địa (thẻ ATM) của 34 ngân hàng Việt Nam. Quý khách vui lòng nhập các thông tin thẻ ở trang tiếp theo.
+                    Khi lựa chọn hình thức thanh toán này, Quý khách phải đăng ký dich vụ ngân hàng trực tuyến.
+                </p>
+
+                <p> - Thanh toán QR tại ứng dụng của MoMo. Quét mã để thanh toán</p>
+            </div>
+            <!-- Form thanh toán -->
+            <form method="post" action="@Url.Action("ThanhToan", "Home")">
+                <div class="payment">
+                    <button type="submit" class="btn-pay">Thanh toán</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+      <div class="faq">
+        <button class="accordion">
+            <h3>Thẻ tín dụng</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <hr style="width: 90%; margin-left: 20px"></hr>
+            <div class="pay-content">
+                <div class="payment-container">
+                    <div class="container">
+                        <header>
+                            <span class="logo">
+                                <img src="../Image/logo.png" alt="" />
+                                <h5>Master Card</h5>
+                            </span>
+                            <img src="../Image/chip.png" alt="" class="chip" />
+                        </header>
+                        <div class="card-details">
+                            <div class="name-number">
+                                <h6>Card Number</h6>
+                                <h5 class="number">XXXX XXXX XXXX XXXX</h5>
+                                <h5 class="name">**** **** **** </h5>
+                            </div>
+                            <div class="valid-date">
+                                <h6>Valid Thru</h6>
+                                <h5>__/__</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-card">
+                        <form>
+                            <label for="card-number">Số thẻ</label>
+                            <input type="text" id="card-number" placeholder="Số thẻ tín dụng của bạn" />
+
+                            <div class="group-input">
+                                <div class="input-group">
+                                    <label for="expiry-date">Ngày hết hạn</label>
+                                    <input type="text" id="expiry-date" placeholder="MM/YY" />
+                                </div>
+                                <div class="input-group">
+                                    <label for="cvv">Mã bảo mật</label>
+                                    <input type="text" id="cvv" placeholder="Nhập CVV" />
+                                </div>
+                            </div>
+                            <label for="card-name">Tên đầy đủ của chủ thẻ</label>
+                            <input type="text" id="card-name" placeholder="Tên chủ thẻ" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Form thanh toán -->
+            <form method="post" action="@Url.Action("ThanhToan", "Home")">
+                <div class="payment">
+                    <button type="submit" class="btn-pay">Thanh toán</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="warn">
+            <h4>Điều kiện thay đổi vé</h4>
+            <p>1. Giá vé Phổ thông siêu tiết kiệm: </p>
+            <p style="margin-left:20px;">
+                   +   Hành trình nội địa Việt Nam: không được phép
+            </p>
+             <p style="margin-left:20px;">     
+                    +   Các hành trình khác: không được phép hoặc được phép mất phí/miễn phí tùy theo điều kiện của từng loại giá vé
+            </p>
+
+            <p>2. Giá vé Phổ thông tiết kiệm: </p>
+            <p style="margin-left:20px;">
+                    +   Hành trình nội địa Việt Nam: mất phí
+            </p>
+                <p style="margin-left:20px;">     
+                    +   Các hành trình khác: không được phép hoặc được phép mất phí/miễn phí tùy theo điều kiện của từng loại giá vé
+            </p>
+            <p>3. Các loại giá vé khác: được phép, mất phí hoặc miễn phí tùy theo điều kiện của từng loại giá vé </p>
+
+            <h4>Điều kiện hoàn vé</h4>
+            <p>1. Giá vé Phổ thông siêu tiết kiệm: </p>
+            <p style="margin-left:20px;">
+                   +   Hành trình nội địa Việt Nam: không được phép
+            </p>
+             <p style="margin-left:20px;">     
+                    +   Các hành trình khác: không được phép hoặc được phép mất phí/miễn phí tùy theo điều kiện của từng loại giá vé
+            </p>
+            <p>2. Các loại giá vé khác: được phép, mất phí hoặc miễn phí tùy theo điều kiện của từng loại giá vé</p>
+            <p><b>3. Nếu Quý khách lựa chọn các loại giá vé khác nhau, điều kiện giá vé chặt nhất sẽ được áp dụng cho toàn bộ hành trình.</b></p>
+        </div>
+    </div>
+</div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>

@@ -1,0 +1,496 @@
+﻿
+
+.wrapper {
+    max-width: 75%;
+    margin: auto;
+}
+    .wrapper > h3,h2 {
+        color: var(--primary-color-dark);
+    }
+    .wrapper > h2{
+        text-align:right;
+        font-weight:bold;
+    }
+
+    .wrapper > h3,
+    .wrapper > h1 {
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .wrapper > h1 {
+        letter-spacing: 3px;
+    }
+
+.warn {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    justify-content: space-between;
+    align-items: center;
+}
+.warn p{
+    padding:7px 0;
+}
+.accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+    .accordion i {
+        font-size: 1.6rem;
+    }
+
+    .active,
+    .accordion:hover {
+        background-color: #f1f7f5;
+    }
+
+.details {
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+}
+
+.details-header {
+    margin-bottom: 10px; 
+    text-align:left;
+}
+
+.details-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 100;
+    align-items: center;
+}
+
+.details-place {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr; /* Chia thành 3 cột: thời gian, bay thẳng, điểm đến */
+    gap: 10px;
+    align-items: baseline;
+}
+    .details-place .column {
+        display: flex;
+        flex-direction: column; 
+        gap: 5px; 
+    }
+    .details-place .middle p {
+        margin: 0;
+        padding: 0 5px;
+        font-size: 14px;
+        z-index: 1;
+        color: var(--primary-color-dark);
+    }
+
+    .details-place .middle .dotted-line {
+        width: 13%;
+        border-top: 1px dashed #ccc; /* Tạo đường đứt nét */
+        position: absolute;
+        z-index: 0;
+        margin-left:-20px;
+        margin-top:10px;
+    }
+.details-time {
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    gap: 5px;
+    font-size: 13px;
+    text-align: left;
+    flex-wrap:wrap;
+}
+    .details-time div {
+        display: flex;
+        align-items: baseline; 
+        gap: 5px;
+    }
+    .details-time i {
+        font-size: 13px; /* Kích thước icon */
+        color: #333; /* Màu icon */
+    }
+    .details-time p {
+        margin: 0;
+        padding:2px 0;
+    }
+
+/* Cột details-type */
+.details-type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .details-type h3 {
+        margin: 0;
+        font-size: 16px;
+        color:var(--primary-color-dark);
+    }
+@media (max-width: 768px) {
+    .details-content {
+        grid-template-columns: 1fr; /* Hiển thị theo hàng dọc */
+        gap: 15px;
+    }
+}
+
+
+.pannel {
+    padding: 0 2rem 1rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+}
+
+    .pannel p {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+.faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+    .faq.active {
+        border: none;
+    }
+
+.lock {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin:20px 0;
+}
+    .lock i {
+        color: var(--primary-color-dark);
+    }
+    .lock p{
+        font-size:15px;
+        margin-left:10px;
+    }
+
+/* Tổng thể timeline */
+.journey-timeline {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+
+/* Header */
+.journey-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+    .journey-header h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .journey-header p {
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+    }
+
+/* Step từng hành trình */
+.journey-step {
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color-dark);
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+    .step-content p {
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+    }
+
+.timeline-line {
+    position: absolute;
+    top: 12px;
+    left: 6px; 
+    width: 2px;
+    height: 50px;
+    background-color: #ccc;
+}
+
+/*User*/
+.info-user {
+    display: flex; 
+    gap: 20px; 
+    justify-content: space-between; 
+    margin:20px 40px;
+}
+
+.info, .contact {
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row-title {
+    font-weight: 600;
+    color: var(--primary-color-dark);
+    padding: 3px 10px;
+    margin-top:10px;
+}
+.row-header {
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    margin-top:8px;
+}
+.row {
+    padding:0 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: left;
+    margin-top:-5px;
+}
+.btn-change {
+    border: none;
+    margin: 0 45px 20px;
+    border-radius: 10px;
+    width: 15%;
+    height: 50px;
+    background-color: var(--primary-color-dark);
+    color: white;
+    font-size: 16px;
+}
+
+.group-name{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+    .group-name i {
+        font-size: 30px;
+        color: var(--primary-color-dark);
+    }
+    .group-name .name{
+        padding:5px 0;
+    }
+    .group-name .row-header{
+        margin-bottom:5px;
+    }
+
+
+.pay-content{
+        padding:20px;
+    }
+    .pay-content p{
+        font-size:16px;
+        margin-bottom:15px;
+    }
+    .payment{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+.btn-pay {
+    border: none;
+    border-radius: 10px;
+    width: 15%;
+    height: 50px;
+    background-color: var(--primary-color-dark);
+    color: white;
+    font-size: 16px;
+}
+
+.group-name-pay{
+    text-align:left;
+}
+    .group-name-pay p {
+        font-size: 14px;
+        font-weight: 200;
+        color: var(--primary-color-dark);
+        margin-top:10px;
+    }
+
+.container {
+    position: relative;
+    background-image: url("../Image/bg.png");
+    background-size: cover;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+header,
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .logo img {
+        width: 48px;
+        margin-right: 10px;
+    }
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+header .chip {
+    width: 60px;
+}
+
+h6 {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+h5.number {
+    margin-top: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+h5.name {
+    margin-top: 20px;
+}
+
+.container .card-details {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.payment-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+
+.input-card {
+    flex: 1; 
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+    .input-card label {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+    }
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.chip {
+    width: 40px;
+    height: auto;
+}
+.card-details {
+    margin-top: 20px;
+}
+
+    .card-details .name-number,
+    .card-details .valid-date {
+        margin-bottom: 15px;
+    }
+
+h5.number {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Thiết kế phần input card */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.group-input {
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+}
+
+    .group-input label {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .group-input input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+        box-sizing: border-box;
+    }

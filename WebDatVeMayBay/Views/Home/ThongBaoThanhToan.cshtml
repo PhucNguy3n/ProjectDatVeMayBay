@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "ThongBaoThanhToan";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<div class="thong-bao-thanh-toan">
+    <h1>Đặt vé thành công!</h1>
+    <p>Cảm ơn bạn đã thanh toán và đặt vé cùng chúng tôi.</p>
+    <p>Thông tin vé của bạn đã được xác nhận. Chúc bạn có một chuyến đi vui vẻ!</p>
+
+    <div class="btn-container">
+        <a href="@Url.Action("Index", "Home")" class="btn-back-home">Quay lại trang chủ</a>
+    </div>
+</div>
+
+<style>
+    .thong-bao-thanh-toan {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+        .thong-bao-thanh-toan h1 {
+            font-size: 2rem;
+            color: green;
+        }
+
+        .thong-bao-thanh-toan p {
+            font-size: 1.2rem;
+        }
+
+    .btn-container {
+        margin-top: 20px;
+    }
+
+    .btn-back-home {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        .btn-back-home:hover {
+            background-color: #45a049;
+        }
+</style>
+

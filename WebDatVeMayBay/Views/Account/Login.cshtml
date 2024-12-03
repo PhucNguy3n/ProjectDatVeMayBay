@@ -1,0 +1,111 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Login</title>
+    <link href="~/CSS/stylesAdmin.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form method="post" action="@Url.Action("Register", "Account")">
+                <h1>Đăng ký</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+                <span>hoặc đăng ký bằng tài khoản Google</span>
+                <div class="group-input">
+                    <input type="text" name="tenKH" placeholder="Tên đăng nhập" required>
+                    <select name="gioiTinh" id="gender" required>
+                        <option value="" disabled selected>Giới tính</option>
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+                </div>
+
+                <div class="group-input">
+                    <input type="text" name="cccd" placeholder="CCCD" required />
+                    <input type="email" name="emailKH" placeholder="Email" required>
+                </div>
+
+                <div class="group-input">
+                    <input type="date" name="ngaySinh" placeholder="Ngày sinh" required />
+                    <input type="text" name="sdt" placeholder="Số điện thoại" required />
+                </div>
+
+                <input type="password" name="matKhau" placeholder="Mật khẩu" class="passwordRegister" required>
+                <input type="password" name="xacNhanMatKhau" placeholder="Nhập lại mật khẩu" class="passwordRegister" required>
+                <div class="password-options">
+                    <label>
+                        <input type="checkbox" id="showPasswordRegister"> Hiện mật khẩu
+                    </label>
+                </div>
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <div class="alert alert-danger">
+                        @ViewBag.ErrorMessage
+                    </div>
+                }
+                <button>Đăng ký</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form method="post" action="@Url.Action("Login", "Account")">
+                <h1>Đăng nhập</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+                <span>hoặc đăng nhập bằng tài khoản Google</span>
+                <input type="text" placeholder="Email / Tên đăng nhập" name="email" required>
+                <input type="password" placeholder="Mật khẩu" class="passwordLogin" name="password" required>
+                <div class="password-options">
+                    <label>
+                        <input type="checkbox" id="showPasswordLogin"> Hiện mật khẩu
+                    </label>
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <div class="alert alert-danger">
+                        @ViewBag.ErrorMessage
+                    </div>
+                }
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-success">
+                        @TempData["SuccessMessage"]
+                    </div>
+                }
+                <button>Đăng nhập</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Chào Mừng Trở Lại</h1>
+                    <p>Hãy nhập đầy đủ thông tin để đăng nhập nếu bạn đã có tài khoản</p>
+                    <button class="hidden" id="login">Đăng nhập</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Xin Chào!</h1>
+                    <p>Hãy đăng ký nếu bạn chưa có tài khoản</p>
+                    <button class="hidden" id="register">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/JS/script-login.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\WebDatVeMayBay.dll.config
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\WebDatVeMayBay.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\WebDatVeMayBay.pdb
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\csc.exe
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\csc.exe.config
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\csc.rsp
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\csi.exe
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\csi.rsp
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.AppContext.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.Collections.Immutable.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.IO.FileSystem.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\vbc.exe
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\vbc.exe.config
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\vbc.rsp
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\VBCSCompiler.exe
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\roslyn\VBCSCompiler.exe.config
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\Microsoft.Web.Infrastructure.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Helpers.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Mvc.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Razor.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Deployment.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Razor.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Razor.xml
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.xml
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Deployment.xml
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Razor.xml
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Helpers.xml
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\System.Web.Mvc.xml
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.AssemblyReference.cache
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.CoreCompileInputs.cache
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVe.E94AA0AD.Up2Date
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.dll
+D:\WebsiteDatVeMayBay\WebDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.pdb
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\WebDatVeMayBay.dll.config
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\WebDatVeMayBay.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\WebDatVeMayBay.pdb
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\csc.exe
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\csc.exe.config
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\csc.rsp
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\csi.exe
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\csi.rsp
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.AppContext.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.Collections.Immutable.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.IO.FileSystem.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\System.Reflection.Metadata.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\vbc.exe
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\vbc.exe.config
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\vbc.rsp
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\VBCSCompiler.exe
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\roslyn\VBCSCompiler.exe.config
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\Microsoft.Web.Infrastructure.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Helpers.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Mvc.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Razor.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Deployment.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Razor.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Razor.xml
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.xml
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Deployment.xml
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Razor.xml
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Helpers.xml
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\System.Web.Mvc.xml
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.AssemblyReference.cache
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.CoreCompileInputs.cache
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.CopyComplete
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.dll
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.pdb
+D:\desktop\ProjectDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVe.E94AA0AD.Up2Date
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\WebDatVeMayBay.dll.config
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\WebDatVeMayBay.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\WebDatVeMayBay.pdb
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\csc.exe
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\csc.exe.config
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\csc.rsp
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\csi.exe
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\csi.rsp
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\System.AppContext.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\System.Collections.Immutable.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\System.IO.FileSystem.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\System.Reflection.Metadata.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\vbc.exe
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\vbc.exe.config
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\vbc.rsp
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\VBCSCompiler.exe
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\roslyn\VBCSCompiler.exe.config
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\Microsoft.Web.Infrastructure.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Helpers.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Mvc.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Razor.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Deployment.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Razor.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Razor.xml
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.xml
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Deployment.xml
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Webpages.Razor.xml
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Helpers.xml
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\System.Web.Mvc.xml
+D:\desktop\DatVeMayBay\WebDatVeMayBay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\desktop\DatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.AssemblyReference.cache
+D:\desktop\DatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.CoreCompileInputs.cache
+D:\desktop\DatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.CopyComplete
+D:\desktop\DatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.dll
+D:\desktop\DatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.pdb
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\WebDatVeMayBay.dll.config
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\WebDatVeMayBay.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\WebDatVeMayBay.pdb
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\csc.exe
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\csc.exe.config
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\csc.rsp
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\csi.exe
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\csi.rsp
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.AppContext.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.Collections.Immutable.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.IO.FileSystem.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.Reflection.Metadata.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\vbc.exe
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\vbc.exe.config
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\vbc.rsp
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\VBCSCompiler.exe
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\VBCSCompiler.exe.config
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\Microsoft.Web.Infrastructure.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Helpers.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Mvc.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Razor.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.Deployment.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.Razor.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Razor.xml
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.xml
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.Deployment.xml
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.Razor.xml
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Helpers.xml
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Mvc.xml
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.AssemblyReference.cache
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.CoreCompileInputs.cache
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\obj\Debug\WebDatVe.E94AA0AD.Up2Date
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.pdb
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\EntityFramework.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\EntityFramework.SqlServer.dll
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\EntityFramework.xml
+E:\BaiTap\CNPM nâng cao\PRoject\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\EntityFramework.SqlServer.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\WebDatVeMayBay.dll.config
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\WebDatVeMayBay.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\WebDatVeMayBay.pdb
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\csc.exe
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\csc.exe.config
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\csc.rsp
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\csi.exe
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\csi.rsp
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.AppContext.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.Collections.Immutable.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.IO.FileSystem.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\System.Reflection.Metadata.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\vbc.exe
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\vbc.exe.config
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\vbc.rsp
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\VBCSCompiler.exe
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\roslyn\VBCSCompiler.exe.config
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\EntityFramework.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\EntityFramework.SqlServer.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\Microsoft.Web.Infrastructure.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Helpers.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Mvc.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Razor.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.Deployment.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.Razor.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\EntityFramework.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\EntityFramework.SqlServer.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Razor.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.Deployment.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Webpages.Razor.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Helpers.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\System.Web.Mvc.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.AssemblyReference.cache
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.CoreCompileInputs.cache
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.CopyComplete
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.pdb

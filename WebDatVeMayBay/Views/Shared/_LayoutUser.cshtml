@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<style>
+    /* Dropdown container */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown button */
+    .dropdown-toggle-custom {
+        background-color: #f8f9fa; /* Màu nền sáng */
+        border: 1px solid #ced4da; /* Viền nhẹ */
+        color: #212529; /* Màu chữ */
+        transition: background-color 0.3s, box-shadow 0.3s; /* Hiệu ứng hover */
+    }
+
+        .dropdown-toggle-custom:hover {
+            background-color: #e9ecef; /* Màu nền khi hover */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+        }
+
+        /* Icon trong dropdown button */
+        .dropdown-toggle-custom .icon-white {
+            margin-right: 8px;
+            color: #6c757d; /* Màu xám nhẹ */
+            transition: color 0.3s; /* Hiệu ứng hover */
+        }
+
+        .dropdown-toggle-custom:hover .icon-white {
+            color: #343a40; /* Màu đậm hơn khi hover */
+        }
+
+    /* Dropdown menu */
+    .dropdown-menu {
+        margin-top: 5px; /* Khoảng cách giữa nút và menu */
+        border: 1px solid #ced4da; /* Viền nhẹ */
+        border-radius: 8px; /* Bo góc */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+        padding: 0; /* Xóa khoảng cách thừa */
+        min-width: 200px; /* Đặt kích thước tối thiểu */
+        overflow: hidden; /* Giữ bo góc cho dropdown */
+    }
+
+    /* Dropdown items */
+    .dropdown-item {
+        padding: 12px 16px; /* Khoảng cách nội dung */
+        color: #212529; /* Màu chữ */
+        text-decoration: none; /* Xóa gạch chân */
+        transition: background-color 0.3s, color 0.3s; /* Hiệu ứng hover */
+    }
+
+        .dropdown-item:hover {
+            background-color: #e9ecef; /* Màu nền khi hover */
+            color: #343a40; /* Màu chữ khi hover */
+        }
+
+    /* Form đăng xuất */
+    #frmlogout input[type="submit"] {
+        font-size: 14px; /* Kích thước chữ */
+        text-align: left; /* Canh trái */
+        padding: 8px 16px; /* Khoảng cách nội dung */
+    }
+
+        #frmlogout input[type="submit"]:hover {
+            background-color: #e9ecef; /* Màu nền khi hover */
+            color: #343a40; /* Màu chữ khi hover */
+        }
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <title>@ViewBag.Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+          rel="stylesheet" />
+    <link href="~/CSS/stylesUser.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (yêu cầu cho dropdown hoạt động) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">Gumball</div>
+        <ul class="nav__links">
+            <li class="link"><a href="#">Trang chủ</a></li>
+            <li class="link"><a href="#">Giới thiệu</a></li>
+            <li class="link"><a href="#">Ưu đãi</a></li>
+            <li class="link"><a href="#">Hạng ghế</a></li>
+            <li class="link"><a href="#">Điểm đến</a></li>
+        </ul>
+        <div class="button-group">
+            @if (Session["EmailKH"] == null)
+            {
+                <a href="/Account/Login" class="btn btn-sign-in">Đăng nhập</a>
+            }
+            else
+            {
+                <div class="dropdown">
+                    <div class="py-2 px-4 rounded-pill dropdown-toggle dropdown-toggle-custom d-inline-flex align-items-center" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black; cursor: pointer;">
+                        <i class="fas fa-users icon-white"></i>
+                        <span style="font-family: auto;">@Session["EmailKH"]</span>
+                        <span class="d-lg-none ms-2">Người dùng</span>
+                    </div>
+                    <div class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/Users/Info" style="color: black;">Cập nhật thông tin</a>
+                        <div class="dropdown-item" style="display: flex; align-items: center; padding: 0; cursor: pointer;">
+                            <form action="/Account/Logout" id="frmlogout" method="post" style="margin: 0;">
+                                <input type="submit" value="Đăng xuất" style="background: none; border: none; color: black; padding: 0; cursor: pointer; width: 100%; padding-left: 16px;" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </nav>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Flivan</h3>
+                <p>
+                    Nơi đẳng cấp cất cánh. Với cam kết mạnh mẽ về sự hài lòng của khách hàng và niềm đam mê hàng không, Flivan Airlines mang đến dịch vụ xuất sắc và hành trình trọn vẹn.
+                </p>
+                <p>
+                    Từ những nụ cười thân thiện đến các máy bay hiện đại, chúng tôi kết nối thế giới, đảm bảo những trải nghiệm an toàn, thoải mái và khó quên.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4>THÔNG TIN</h4>
+                <p>Trang chủ</p>
+                <p>Giới thiệu</p>
+                <p>Ưu đãi</p>
+                <p>Hạng ghế</p>
+                <p>Điểm đến</p>
+            </div>
+            <div class="footer__col">
+                <h4>LIÊN HỆ</h4>
+                <p>Hỗ trợ</p>
+                <p>Truyền thông</p>
+                <p>Mạng xã hội</p>
+            </div>
+        </div>
+        <div class="section__container footer__bar">
+            <p>Bản quyền © 2023 Web Design Mastery. Bảo lưu mọi quyền.</p>
+            <div class="socials">
+                <span><i class="ri-facebook-fill"></i></span>
+                <span><i class="ri-twitter-fill"></i></span>
+                <span><i class="ri-instagram-line"></i></span>
+                <span><i class="ri-youtube-fill"></i></span>
+            </div>
+        </div>
+    </footer>
+    <script src="~/JS/scripts.js"></script>
+</body>
+</html>
