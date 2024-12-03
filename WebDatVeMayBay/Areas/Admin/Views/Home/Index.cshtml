@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2 class="mb-5">Dashboard</h2>
+
+<div class="container-fluid mt-3 d-flex justify-content-between">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Chuyến Bay</div>
+        <div class="card-body">
+            <h5 class="card-title">Số lượng chuyến bay: @ViewBag.NumberOfFlights</h5>
+        </div>
+        <div class="card-footer">
+            <a href="/admin/chuyenbay" class="text-white">Xem chi tiết</a>
+        </div>
+    </div>
+    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+        <div class="card-header">Máy Bay</div>
+        <div class="card-body">
+            <h5 class="card-title">Số lượng máy bay: @ViewBag.NumberOfPlanes</h5>
+        </div>
+        <div class="card-footer">
+            <a href="/admin/maybay" class="text-white">Xem chi tiết</a>
+        </div>
+    </div>
+    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Nhân Viên</div>
+        <div class="card-body">
+            <h5 class="card-title">Số lượng nhân viên: @ViewBag.NumberOfEmployees</h5>
+        </div>
+        <div class="card-footer">
+            <a href="/admin/nhanvien" class="text-dark">Xem chi tiết</a>
+        </div>
+    </div>
+</div>

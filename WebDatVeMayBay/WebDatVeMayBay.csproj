@@ -52,6 +52,12 @@
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -111,6 +117,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="CSS\flightShopping.css" />
     <Content Include="CSS\infoTraverler.css" />
     <Content Include="CSS\stylesAdmin.css" />
@@ -153,6 +160,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ChuyenBayController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\KhachHangController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MayBayController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NhanVienController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -170,6 +183,25 @@
     <Compile Include="Models\Ve.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Views\Home\ChooseFlight.cshtml" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\_AdminLayoutPage.cshtml" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ChuyenBay\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ChuyenBay\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ChuyenBay\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ChuyenBay\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ChuyenBay\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\MayBay\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\MayBay\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\MayBay\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\MayBay\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\MayBay\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanVien\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanVien\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanVien\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanVien\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanVien\Delete.cshtml" />
     <None Include="Views\Home\FlightShopping.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -215,6 +247,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Views\KhachHang\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

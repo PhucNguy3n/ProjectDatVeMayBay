@@ -1,0 +1,76 @@
+﻿@model WebDatVeMayBay.Models.NhanVien
+
+@{
+    ViewBag.Title = "Tạo mới Nhân Viên";
+    var gioiTinhOptions = new List<SelectListItem>
+    {
+        new SelectListItem { Value = "Nam", Text = "Nam" },
+        new SelectListItem { Value = "Nữ", Text = "Nữ" }
+    };
+}
+
+<h2 class="mb-5">Quản lý nhân viên / Tạo mới nhân viên</h2>
+
+<div class="container mt-4">
+    <h4 class="text-center">Tạo mới nhân viên</h4>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+            <!-- Cột trái -->
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.MaNV, "Mã Nhân Viên:")
+                    @Html.TextBoxFor(model => model.MaNV, new { @class = "form-control", placeholder = "Nhập mã nhân viên" })
+                    @Html.ValidationMessageFor(model => model.MaNV, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.TenKH, "Tên Nhân Viên:")
+                    @Html.TextBoxFor(model => model.TenKH, new { @class = "form-control", placeholder = "Nhập tên nhân viên" })
+                    @Html.ValidationMessageFor(model => model.TenKH, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.GioiTinh, "Giới Tính:")
+                    @Html.DropDownListFor(model => model.GioiTinh, gioiTinhOptions, "Chọn giới tính", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.NgaySinh, "Ngày Sinh:")
+                    @Html.TextBoxFor(model => model.NgaySinh, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Cột phải -->
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.DiaChi, "Địa Chỉ:")
+                    @Html.TextBoxFor(model => model.DiaChi, new { @class = "form-control", placeholder = "Nhập địa chỉ" })
+                    @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.SDT, "Số Điện Thoại:")
+                    @Html.TextBoxFor(model => model.SDT, new { @class = "form-control", placeholder = "Nhập số điện thoại" })
+                    @Html.ValidationMessageFor(model => model.SDT, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.TinhTrang, "Tình Trạng:")
+                    @Html.TextBoxFor(model => model.TinhTrang, new { @class = "form-control", placeholder = "Tình trạng hiện tại" })
+                    @Html.ValidationMessageFor(model => model.TinhTrang, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                     <br />
+                    <button type="submit" class="btn btn-primary">Tạo</button>
+                    <a href="@Url.Action("Index", "NhanVien")" class="btn btn-secondary">Quay về</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
