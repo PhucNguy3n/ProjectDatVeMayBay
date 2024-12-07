@@ -1,0 +1,54 @@
+﻿@model WebDatVeMayBay.Models.NhanVien
+
+@{
+    ViewBag.Title = "Chỉnh sửa thông tin nhân viên";
+}
+
+<h2 class="mb-5">Quản lý nhân viên / Chỉnh sửa thông tin nhân viên</h2>
+
+<div class="container mt-4">
+    <h4 class="text-center">Chỉnh sửa thông tin nhân viên</h4>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.NgaySinh)
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.MaNV, "Mã Nhân Viên:")
+                    @Html.TextBoxFor(model => model.MaNV, new { @class = "form-control", @readonly = "readonly" })
+                </div>
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.TenKH, "Tên Nhân Viên:")
+                    @Html.TextBoxFor(model => model.TenKH, new { @class = "form-control" })
+                </div>
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.GioiTinh, "Giới Tính:")
+                    @Html.DropDownListFor(model => model.GioiTinh,
+                        new SelectList(new[] { "Nam", "Nữ" }, Model.GioiTinh),
+                        "Chọn giới tính", new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.DiaChi, "Địa Chỉ:")
+                    @Html.TextBoxFor(model => model.DiaChi, new { @class = "form-control" })
+                </div>
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.SDT, "Số Điện Thoại:")
+                    @Html.TextBoxFor(model => model.SDT, new { @class = "form-control" })
+                </div>
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.TinhTrang, "Tình Trạng:")
+                    @Html.TextBoxFor(model => model.TinhTrang, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary">Cập nhật</button>
+            <a href="@Url.Action("Index", "NhanVien")" class="btn btn-secondary">Quay về</a>
+        </div>
+    }
+</div>

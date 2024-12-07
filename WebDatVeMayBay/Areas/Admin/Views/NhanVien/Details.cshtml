@@ -1,0 +1,46 @@
+﻿@model WebDatVeMayBay.Models.NhanVien
+
+@{
+    ViewBag.Title = "Chi tiết nhân viên";
+}
+
+<h2 class="mb-5">Quản lý nhân viên / Chi tiết nhân viên</h2>
+
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>Mã nhân viên</th>
+            <td>@Model.MaNV</td>
+        </tr>
+        <tr>
+            <th>Tên nhân viên</th>
+            <td>@Model.TenKH</td>
+        </tr>
+        <tr>
+            <th>Giới tính</th>
+            <td>@Model.GioiTinh</td>
+        </tr>
+        <tr>
+            <th>Ngày sinh</th>
+            <td>@Model.NgaySinh.Value.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <th>Địa chỉ</th>
+            <td>@Model.DiaChi</td>
+        </tr>
+        <tr>
+            <th>SDT</th>
+            <td>@Model.SDT</td>
+        </tr>
+        <tr>
+            <th>Tình trạng</th>
+            <td>@Model.TinhTrang</td>
+        </tr>
+    </table>
+
+    <div class="text-center">
+        <a href="/admin/nhanvien" class="btn btn-primary">Quay lại danh sách</a>
+    </div>
+</div>
+
+

@@ -1,0 +1,53 @@
+﻿@model WebDatVeMayBay.Models.NhanVien
+
+@{
+    ViewBag.Title = "Xóa nhân viên";
+}
+
+<h2 class="mb-5">Quản lý nhân viên / Xóa nhân viên</h2>
+
+<div class="container">
+    <p class="text-danger">Bạn có chắc chắn muốn xóa nhân viên này không?</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Mã nhân viên</th>
+            <td>@Model.MaNV</td>
+        </tr>
+        <tr>
+            <th>Tên nhân viên</th>
+            <td>@Model.TenKH</td>
+        </tr>
+        <tr>
+            <th>Giới tính</th>
+            <td>@Model.GioiTinh</td>
+        </tr>
+        <tr>
+            <th>Ngày sinh</th>
+            <td>@Model.NgaySinh.Value.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <th>Địa chỉ</th>
+            <td>@Model.DiaChi</td>
+        </tr>
+        <tr>
+            <th>SDT</th>
+            <td>@Model.SDT</td>
+        </tr>
+        <tr>
+            <th>Tình trạng</th>
+            <td>@Model.TinhTrang</td>
+        </tr>
+    </table>
+
+    <div class="text-center">
+        @using (Html.BeginForm("Delete", "NhanVien", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(model => model.MaNV)
+
+            <button type="submit" class="btn btn-danger">Xóa</button>
+            <a href="/admin/nhanvien" class="btn btn-secondary">Hủy</a>
+        }
+    </div>
+</div>

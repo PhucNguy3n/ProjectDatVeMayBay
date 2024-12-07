@@ -1,0 +1,96 @@
+﻿@model WebDatVeMayBay.Models.ChuyenBay
+
+@{
+    ViewBag.Title = "Edit ChuyenBay";
+}
+
+<h2 class="mb-5">Quản lý chuyến bay / Cập nhật thông tin chuyến bay</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container-fluid">
+        <h4 class="text-center">Cập nhật thông tin chuyến bay</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="row">
+            <!-- Cột thứ nhất -->
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.MaChuyenBay, "Mã chuyến bay:", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.MaChuyenBay, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.DiemDi, "Điểm đi:", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.DiemDi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DiemDi, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.SanBayDi, "Sân bay đi:", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.SanBayDi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SanBayDi, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.ThoiGianKhoiHanh, "Thời gian khởi hành:", htmlAttributes: new { @class = "control-label" })
+                    @*@Html.EditorFor(model => model.ThoiGianKhoiHanh, new { htmlAttributes = new { @class = "form-control", type = "datetime-local", value = Model.ThoiGianKhoiHanh.ToString("yyyy-MM-ddTHH:mm") } })*@
+                    @Html.TextBoxFor(model => model.ThoiGianKhoiHanh, "{0:yyyy-MM-ddTHH:mm}", new { @class = "form-control", type = "datetime-local" })
+
+                    @Html.ValidationMessageFor(model => model.ThoiGianKhoiHanh, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.ThoiGianBayDuTinh, "Thời gian bay dự tính:", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.ThoiGianBayDuTinh, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ThoiGianBayDuTinh, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <!-- Cột thứ hai -->
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.MaMayBay, "Máy bay:", htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownList("MaMayBay", null, "Chọn Máy Bay", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.MaMayBay, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.DiemDen, "Điểm đến:", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.DiemDen, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DiemDen, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.SanBayDen, "Sân bay đến:", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.SanBayDen, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SanBayDen, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.ThoiGianDen, "Thời gian đến:", htmlAttributes: new { @class = "control-label" })
+                    @*@Html.EditorFor(model => model.ThoiGianDen, new { htmlAttributes = new { @class = "form-control", type = "datetime-local", value = Model.ThoiGianDen } })*@
+                    @Html.TextBoxFor(model => model.ThoiGianDen, "{0:yyyy-MM-ddTHH:mm}", new { @class = "form-control", type = "datetime-local" })
+                    @Html.ValidationMessageFor(model => model.ThoiGianDen, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.GiaChuyenBay, "Giá chuyến bay:", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.GiaChuyenBay, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.GiaChuyenBay, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <!-- Nút submit -->
+        <div class="form-group text-center mt-4">
+            <input type="submit" value="Cập nhật" class="btn btn-primary" />
+            <a href="/admin/chuyenbay" class="btn btn-secondary">Quay về</a>
+        </div>
+    </div>
+}
+
+

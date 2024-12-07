@@ -1,0 +1,58 @@
+﻿@model WebDatVeMayBay.Models.ChuyenBay
+
+@{
+    ViewBag.Title = "Chi tiết chuyến bay";
+}
+
+<h2 class="mb-5">Quản lý chuyến bay / Chi tiết chuyến bay</h2>
+
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>Mã chuyến bay</th>
+            <td>@Model.MaChuyenBay</td>
+        </tr>
+        <tr>
+            <th>Tên máy bay</th>
+            <td>@Model.MayBay.TenMayBay</td>
+        </tr>
+        <tr>
+            <th>Sân bay đi</th>
+            <td>@Model.SanBayDi</td>
+        </tr>
+        <tr>
+            <th>Sân bay đến</th>
+            <td>@Model.SanBayDen</td>
+        </tr>
+        <tr>
+            <th>Điểm đi</th>
+            <td>@Model.DiemDi</td>
+        </tr>
+        <tr>
+            <th>Điểm đến</th>
+            <td>@Model.DiemDen</td>
+        </tr>
+        <tr>
+            <th>Thời gian khởi hành</th>
+            <td>@Model.ThoiGianKhoiHanh.ToString("dd/MM/yyyy HH:mm")</td>
+        </tr>
+        <tr>
+            <th>Thời gian đến</th>
+            <td>@Model.ThoiGianDen.ToString("dd/MM/yyyy HH:mm")</td>
+        </tr>
+        <tr>
+            <th>Thời gian bay dự tính</th>
+            <td>@Model.ThoiGianBayDuTinh</td>
+        </tr>
+        <tr>
+            <th>Giá chuyến bay</th>
+            <td>@Model.GiaChuyenBay.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</td>
+        </tr>
+    </table>
+
+    <div class="text-center">
+        <a href="/admin/chuyenbay" class="btn btn-primary">Quay lại danh sách</a>
+    </div>
+</div>
+
+

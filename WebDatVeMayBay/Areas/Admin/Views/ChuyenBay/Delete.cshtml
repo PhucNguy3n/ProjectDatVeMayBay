@@ -1,0 +1,49 @@
+﻿@model WebDatVeMayBay.Models.ChuyenBay
+
+@{
+    ViewBag.Title = "Xóa chuyến bay";
+}
+
+<h2 class="mb-5">Quản lý chuyến bay / Xóa chuyến bay</h2>
+
+<div class="container">
+    <p class="text-danger">Bạn có chắc chắn muốn xóa chuyến bay này không?</p>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Mã chuyến bay</th>
+            <td>@Model.MaChuyenBay</td>
+        </tr>
+        <tr>
+            <th>Mã máy bay</th>
+            <td>@Model.MaMayBay</td>
+        </tr>
+        <tr>
+            <th>Sân bay đi</th>
+            <td>@Model.SanBayDi</td>
+        </tr>
+        <tr>
+            <th>Sân bay đến</th>
+            <td>@Model.SanBayDen</td>
+        </tr>
+        <tr>
+            <th>Thời gian khởi hành</th>
+            <td>@Model.ThoiGianKhoiHanh.ToString("dd/MM/yyyy HH:mm")</td>
+        </tr>
+        <tr>
+            <th>Giá chuyến bay</th>
+            <td>@Model.GiaChuyenBay.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</td>
+        </tr>
+    </table>
+
+    <div class="text-center">
+        @using (Html.BeginForm("Delete", "ChuyenBay", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(model => model.MaChuyenBay)
+
+            <button type="submit" class="btn btn-danger">Xóa</button>
+            <a href="/admin/chuyenbay" class="btn btn-secondary">Hủy</a>
+        }
+    </div>
+</div>

@@ -1,0 +1,42 @@
+﻿@model WebDatVeMayBay.Models.MayBay
+
+@{
+    ViewBag.Title = "Tạo mới Máy Bay";
+}
+
+<h2 class="mb-5">Quản lý máy bay / Tạo mới máy bay</h2>
+
+<div class="container mt-4">
+    <h4 class="text-center">Tạo mới máy bay</h4>
+    <div class="row justify-content-center">
+        <div class="col-md-6 mx-auto">
+            @using (Html.BeginForm("Create", "MayBay", FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.MaMayBay, "Mã máy bay:", htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.MaMayBay, new { @class = "form-control", placeholder = "Nhập mã máy bay" })
+                    @Html.ValidationMessageFor(model => model.MaMayBay, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.MaGhe, "Mã ghế:", htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.MaGhe, new { @class = "form-control", placeholder = "Nhập mã ghế" })
+                    @Html.ValidationMessageFor(model => model.MaGhe, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+                    @Html.LabelFor(model => model.TenMayBay, "Tên máy bay:", htmlAttributes: new { @class = "control-label" })
+                    @Html.TextBoxFor(model => model.TenMayBay, new { @class = "form-control", placeholder = "Nhập tên máy bay" })
+                    @Html.ValidationMessageFor(model => model.TenMayBay, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">Tạo mới</button>
+                    <a href="/admin/maybay" class="btn btn-secondary">Quay về</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<WebDatVeMayBay.Models.MayBay>
+
+@{
+    ViewBag.Title = "Danh sách máy bay";
+}
+
+<h2 class="mb-5">Quản lý máy bay / Danh sách máy bay</h2>
+
+<div class="container-fluid mt-3">
+    <!-- Form tìm kiếm -->
+    @using (Html.BeginForm("Index", "MayBay", FormMethod.Get))
+    {
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="text" name="searchTerm" class="form-control" placeholder="Tìm kiếm..." value="@Request.QueryString["searchTerm"]" />
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            </div>
+            <div class="col-md-4">
+                <a href="/admin/maybay/create" class="btn btn-primary float-end">Tạo mới máy bay</a>
+            </div>
+        </div>
+    }
+    <!-- Bảng danh sách máy bay -->
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.ActionLink("Mã máy bay", "Index", new { sortOrder = ViewBag.SortByMaMayBay, searchTerm = Request.QueryString["searchTerm"] })
+                </th>
+                <th>
+                    @Html.ActionLink("Tên máy bay", "Index", new { sortOrder = ViewBag.SortByTenMayBay, searchTerm = Request.QueryString["searchTerm"] })
+                </th>
+                <th>Mã ghế</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mayBay in Model)
+            {
+                <tr>
+                    <td>@mayBay.MaMayBay</td>
+                    <td>@mayBay.TenMayBay</td>
+                    <td>@mayBay.MaGhe</td>
+                    <td>
+                        <a href="@Url.Action("Details", "MayBay", new { id = mayBay.MaMayBay })" class="btn btn-info btn-sm">Chi tiết</a>
+                        <a href="@Url.Action("Edit", "MayBay", new { id = mayBay.MaMayBay })" class="btn btn-warning btn-sm">Sửa</a>
+                        <a href="@Url.Action("Delete", "MayBay", new { id = mayBay.MaMayBay })" class="btn btn-danger btn-sm">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Phân trang -->
+    <div class="d-flex justify-content-center mt-4">
+        @Html.PagedListPager(Model,
+         page => Url.Action("Index",
+         new { page, sortOrder = ViewBag.CurrentSort, searchTerm = Request.QueryString["searchTerm"] }),
+         new PagedListRenderOptions
+         {
+             UlElementClasses = new[] { "pagination" },
+             LiElementClasses = new[] { "page-item" },
+             LinkToPreviousPageFormat = "<",
+             LinkToNextPageFormat = ">",
+             LinkToFirstPageFormat = "<<",
+             LinkToLastPageFormat = ">>",
+             DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+             DisplayLinkToLastPage = PagedListDisplayMode.Always,
+             DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+             DisplayLinkToNextPage = PagedListDisplayMode.Always,
+             Display = PagedListDisplayMode.IfNeeded,
+             FunctionToTransformEachPageLink = (liTag, aTag) =>
+             {
+                 aTag.AddCssClass("page-link");
+                 liTag.InnerHtml = aTag.ToString();
+                 return liTag;
+             }
+         })
+    </div>
+</div>
