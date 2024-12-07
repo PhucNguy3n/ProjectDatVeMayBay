@@ -85,7 +85,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin-bottom:0;
 }
 
 .nav-item {
@@ -102,7 +101,6 @@ nav {
   font-weight: 500;
   color: var(--text-light);
   transition: 0.3s;
-  text-decoration:none;
 }
 
 .link a:hover {
