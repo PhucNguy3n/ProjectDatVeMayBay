@@ -309,3 +309,7 @@ D:\Coding\SWR_SWE_SWT\DoAN_CNPMNC\ProjectDatVeMayBay\WebDatVeMayBay\obj\Debug\We
 D:\Coding\SWR_SWE_SWT\DoAN_CNPMNC\ProjectDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.csproj.CopyComplete
 D:\Coding\SWR_SWE_SWT\DoAN_CNPMNC\ProjectDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.dll
 D:\Coding\SWR_SWE_SWT\DoAN_CNPMNC\ProjectDatVeMayBay\WebDatVeMayBay\obj\Debug\WebDatVeMayBay.pdb
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\PagedList.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\PagedList.Mvc.dll
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\PagedList.xml
+D:\desktop\ProjectDatVeMayBay-master\ProjectDatVeMayBay-master\WebDatVeMayBay\bin\PagedList.Mvc.xml

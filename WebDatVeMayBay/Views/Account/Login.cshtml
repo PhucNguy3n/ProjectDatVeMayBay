@@ -1,9 +1,10 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
 
-<!DOCTYPE html>
+@*<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -12,10 +13,10 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Login</title>
-    <link href="~/CSS/stylesAdmin.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-</head>
-<body>
+</head>*@
+<link href="~/CSS/stylesAdmin.css" rel="stylesheet" />
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+<div class="body">
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form method="post" action="@Url.Action("Register", "Account")">
@@ -107,5 +108,4 @@
     </div>
 
     <script src="~/JS/script-login.js"></script>
-</body>
-</html>
+</div>
