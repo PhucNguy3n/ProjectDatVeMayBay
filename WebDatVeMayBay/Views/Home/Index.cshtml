@@ -154,7 +154,6 @@
             <h2 class="section__header">
                 Du lịch để tạo nên kỷ niệm khắp thế giới
             </h2>
-            <button class="view__all">Xem Tất Cả</button>
         </div>
         <div class="memories__grid">
             <div class="memories__card">
@@ -218,59 +217,22 @@
     </div>
 </section>
 
-<section class="section__container travellers__container">
-    <h2 class="section__header">Những khách du lịch xuất sắc nhất trong tháng</h2>
-    <div class="travellers__grid">
-        <div class="travellers__card">
-            <img src="~/Image/traveller-1.jpg" alt="Khách du lịch 1" />
-            <div class="travellers__card__content">
-                <img src="~/Image/client-1.jpg" alt="Khách hàng 1" />
-                <h4>Emily Johnson</h4>
-                <p>Dubai</p>
-            </div>
-        </div>
-        <div class="travellers__card">
-            <img src="~/Image/traveller-2.jpg" alt="Khách du lịch 2" />
-            <div class="travellers__card__content">
-                <img src="~/Image/client-2.jpg" alt="Khách hàng 2" />
-                <h4>David Smith</h4>
-                <p>Paris</p>
-            </div>
-        </div>
-        <div class="travellers__card">
-            <img src="~/Image/traveller-3.jpg" alt="Khách du lịch 3" />
-            <div class="travellers__card__content">
-                <img src="~/Image/client-3.jpg" alt="Khách hàng 3" />
-                <h4>Olivia Brown</h4>
-                <p>Singapore</p>
-            </div>
-        </div>
-        <div class="travellers__card">
-            <img src="~/Image/traveller-4.jpg" alt="Khách du lịch 4" />
-            <div class="travellers__card__content">
-                <img src="~/Image/client-4.jpg" alt="Khách hàng 4" />
-                <h4>Michael Lee</h4>
-                <p>Tokyo</p>
-            </div>
-        </div>
-    </div>
-    <script>
-        function getNowDate() {
-            const today = new Date();
-            const year = today.getFullYear();
-            const month = String(today.getMonth() + 1).padStart(2, '0');
-            const day = String(today.getDate()).padStart(2, '0');
-            return `${year}-${month}-${day}`;
-        }
+<script>
+    function getNowDate() {
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const day = String(today.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const dateInputs = document.querySelectorAll('.myDate');
-            dateInputs.forEach(item => {
-                item.setAttribute('min', getNowDate());
-            })
-        });
-    </script>
-</section>
+    document.addEventListener('DOMContentLoaded', () => {
+        const dateInputs = document.querySelectorAll('.myDate');
+        dateInputs.forEach(item => {
+            item.setAttribute('min', getNowDate());
+        })
+    });
+</script>
 
 <script>
     function toggleReturnDate(element) {
