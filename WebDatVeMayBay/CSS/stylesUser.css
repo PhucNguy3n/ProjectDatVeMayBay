@@ -10,6 +10,15 @@
   --max-width: 1200px;
 }
 
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --main-color: #1ca1a8;
+    --dark-color: #148b94;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --h1-font: "Quattrocento", serif;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -119,6 +128,7 @@ nav {
   border-radius: 2rem;
   border: 1px solid var(--extra-light);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  padding:0 30px 20px;
 }
 
 .booking__nav {
@@ -176,14 +186,12 @@ nav {
 }
 
 .booking__container label {
-    position: absolute;
     font-size: 0.8rem;
     top: 0;
     left: 0;
     transform: translateY(-50%);
     font-weight: 500;
     color: var(--text-dark);
-    pointer-events: none;
     transition: 0.3s;
 }
 
@@ -736,78 +744,54 @@ nav {
     display: block;
 }
 
-
-.search-section {
+#bookingForm {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+    gap: 20px;
 }
 
-.search-fields {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.field-group {
+.trip-type {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    font-size: 18px;
+    justify-content: space-evenly;
 }
 
-.field {
-    display: flex;
-    align-items: center; /* Căn giữa theo chiều dọc */
-    flex: 1;
-    min-width: 200px;
-}
-
-input[type="text"], input[type="date"], select {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.passenger-panel {
-    display: none;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.passenger-category {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.passenger-controls {
+.input-group {
     display: flex;
     align-items: center;
+
+    gap: 20px;
 }
 
-    .passenger-controls button {
-        background-color: #ddd;
-        border: 1px solid #ccc;
-        padding: 5px;
-    }
+.input-wrapper {
+    flex: 1;
+}
 
-    .passenger-controls .count {
-        margin: 0 10px;
-    }
-
-#search-btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
+#takeOff, #arrival, #departureDate, #returnDate , #adultAge, #childAge, #typeFlight{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--black-color);
     border-radius: 5px;
-    cursor: pointer;
+    font-size: 16px;
+    outline: none;
 }
 
-    #search-btn:hover {
-        background-color: #0056b3;
+.icon {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+    .icon i{
+        margin-top:10px;
+    }
+
+    button[type="submit"] {
+        padding: 12px 20px;
+        font-size: 18px;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
     }

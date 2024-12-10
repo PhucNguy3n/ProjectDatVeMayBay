@@ -5,89 +5,116 @@
 <header class="section__container header__container">
     <h1 class="section__header">Tìm Kiếm Và Đặt Chỗ<br />Cho Một Trải Nghiệm Tuyệt Vời</h1>
     <img src="~/Image/header.jpg" alt="Hình ảnh đầu trang" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </header>
 <style>
     .hidden {
         display: none !important;
     }
 </style>
-<div class="search-section">
-    <div class="search-fields">
-        <div class="field-group">
-            <div class="field">
-                <input type="radio" id="one-way" name="trip-type" value="one-way">
-                <label for="one-way">Một chiều</label>
+<section class="section__container booking__container">
+    <form id="bookingForm">
+        <div class="trip-type">
+            <label>
+                <input type="radio" name="tripType" value="return" required>Khứ hồi
+            </label>
+            <label>
+                <input type="radio" name="tripType" value="oneway" required>Một chiều
+            </label>
+        </div>
+
+        <div class="input-group">
+            <div class="input-wrapper">
+                <select id="takeOff" required>
+                    <option value="" disabled selected>Điểm đi</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="South Africa">Greece</option>
+                    <option value="Mexico">Gerogia</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Russia">Estonia</option>
+                    <option value="Russia">Cyprus</option>
+                    <option value="Russia">Denmark</option>
+                </select>
             </div>
-            <div class="field">
-                <input type="radio" id="round-trip" name="trip-type" value="round-trip">
-                <label for="round-trip">Khứ hồi</label>
+
+            <div class="icon">
+                <i class="fa-solid fa-plane"></i>
+            </div>
+
+            <div class="input-wrapper">
+                <select id="arrival" required>
+                    <option value="" disabled selected>Điểm đến</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="South Africa">Greece</option>
+                    <option value="Mexico">Gerogia</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Russia">Estonia</option>
+                    <option value="Russia">Cyprus</option>
+                    <option value="Russia">Denmark</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="input-group">
+            <div class="input-wrapper">
+                <label>Ngày đi</label>
+                <input type="date" id="departureDate" name="date" required>
+            </div>
+
+            <div class="icon" style="padding-top:20px">
+                <i class="fa-solid fa-calendar-days"></i>
+            </div>
+
+            <div class="input-wrapper">
+                <label>Ngày về</label>
+                <input type="date" id="returnDate" name="date" required>
             </div>
         </div>
-        <div class="field-group">
-            <div class="field">
-                <label for="departure">Nơi đi:</label>
-                <input type="text" id="departure" placeholder="Nhập nơi đi">
+
+        <div class="input-group">
+            <div class="input-wrapper">
+                <label>Người lớn</label>
+                <input type="number" id="adultAge" name="" required>
             </div>
-            <div class="field">
-                <label for="destination">Nơi đến:</label>
-                <input type="text" id="destination" placeholder="Nhập nơi đến">
+
+            <div class="icon" style="padding-top:20px">
+                <i class="fa-solid fa-person"></i>
             </div>
-            <div class="field">
-                <label for="departure-date">Ngày đi:</label>
-                <input type="date" id="departure-date" placeholder="Nhập ngày đi">
+
+            <div class="input-wrapper">
+                <label>Trẻ em</label>
+                <input type="number" id="childAge" name="date" required>
             </div>
         </div>
-        <div class="field-group">
-            <div class="field">
-                <label for="return-date">Ngày về:</label>
-                <input type="date" id="return-date" placeholder="Nhập ngày về">
-            </div>
-            <div class="field">
-                <label for="passenger-count">Số lượng hành khách:</label>
-                <input type="text" id="passengers" placeholder="" readonly>
-                <div id="passenger-panel" class="passenger-panel hidden bg-body">
-                    <div class="passenger-category">
-                        <span>Người lớn</span>
-                        <div class="passenger-controls">
-                            <button class="decrease">-</button>
-                            <span class="count">0</span>
-                            <button class="increase">+</button>
-                        </div>
-                    </div>
-                    <div class="passenger-category">
-                        <span>Trẻ em</span>
-                        <div class="passenger-controls">
-                            <button class="decrease">-</button>
-                            <span class="count">0</span>
-                            <button class="increase">+</button>
-                        </div>
-                    </div>
-                    <div class="passenger-category">
-                        <span>Em bé</span>
-                        <div class="passenger-controls">
-                            <button class="decrease">-</button>
-                            <span class="count">0</span>
-                            <button class="increase">+</button>
-                        </div>
-                    </div>
-                    <button id="confirm-passengers">Xong</button>
-                </div>
-            </div>
-            <div class="field">
-                <label for="ticket-class">Hạng vé:</label>
-                <select id="ticket-class">
-                    <option value="economy">Phổ thông</option>
-                    <option value="business">Thương gia</option>
-                    <option value="first-class">Hạng nhất</option>
+        <div class="input-group">
+            <div class="input-wrapper">
+                <select id="typeFlight" required>
+                    <option value="" disabled selected>Hạng vé</option>
+                    <option value="Phổ thông">Phổ thông</option>
+                    <option value="Thương gia">Thương gia</option>
                 </select>
             </div>
         </div>
-    </div>
-    <div class="buttons">
-        <button id="search-btn">Tìm kiếm</button>
-    </div>
-</div>
+            <button type="submit">Tìm kiếm</button>
+    </form>
 
+
+</section>
 
 <section class="section__container plan__container">
     <p class="subheader">HỖ TRỢ DU LỊCH</p>
