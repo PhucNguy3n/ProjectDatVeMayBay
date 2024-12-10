@@ -1,74 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\",
+  "WorkspaceRootPath": "C:\\Users\\DELL\\ProjectDatVeMayBay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\webdatvemaybay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|e:\\baitap\\cnpm n\u00E2ng cao\\project\\projectdatvemaybay-master\\webdatvemaybay\\views\\home\\thongbaothanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\home\\thongbaothanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|e:\\baitap\\cnpm n\u00E2ng cao\\project\\projectdatvemaybay-master\\webdatvemaybay\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|e:\\baitap\\cnpm n\u00E2ng cao\\project\\projectdatvemaybay-master\\webdatvemaybay\\models\\ve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\ve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\webdatvemaybay\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|e:\\baitap\\cnpm n\u00E2ng cao\\project\\projectdatvemaybay-master\\webdatvemaybay\\models\\chitietve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\chitietve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|e:\\baitap\\cnpm n\u00E2ng cao\\project\\projectdatvemaybay-master\\webdatvemaybay\\views\\home\\flightshopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\home\\flightshopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\webdatvemaybay\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\webdatvemaybay\\models\\chuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\chuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\webdatvemaybay\\views\\home\\infotraveler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\home\\infotraveler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|e:\\baitap\\cnpm n\u00E2ng cao\\project\\projectdatvemaybay-master\\webdatvemaybay\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\webdatvemaybay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|e:\\baitap\\cnpm n\u00E2ng cao\\project\\projectdatvemaybay-master\\webdatvemaybay\\models\\datcho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\datcho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\webdatvemaybay\\views\\home\\chooseflight.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\views\\home\\chooseflight.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\home\\chooseflight.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\webdatvemaybay\\models\\maybay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|c:\\users\\dell\\projectdatvemaybay\\webdatvemaybay\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\views\\home\\flightshopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\home\\flightshopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|c:\\users\\dell\\projectdatvemaybay\\webdatvemaybay\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\css\\stylesadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\css\\stylesadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\views\\home\\thongbaothanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\home\\thongbaothanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\models\\ve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\ve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\models\\chitietve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\chitietve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\models\\chuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\chuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\views\\home\\infotraveler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\home\\infotraveler.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\models\\datcho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\datcho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\models\\maybay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\maybay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\webdatvemaybay\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|C:\\Users\\DELL\\ProjectDatVeMayBay\\webdatvemaybay\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\webdatvemaybay\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7B69F48-E492-47E5-BE56-34B229E5CA60}|WebDatVeMayBay\\WebDatVeMayBay.csproj|solutionrelative:webdatvemaybay\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,228 +90,261 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "WebDatVeMayBay\\Controllers\\AccountController.cs",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "WebDatVeMayBay\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T02:55:41.227Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{007a3a6b-b5b2-454d-a2bd-cf929f989be2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InfoTraveler.cshtml",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Home\\InfoTraveler.cshtml",
-              "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Home\\InfoTraveler.cshtml",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Home\\InfoTraveler.cshtml",
-              "RelativeToolTip": "WebDatVeMayBay\\Views\\Home\\InfoTraveler.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAGEAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T17:06:20.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Controllers\\HomeController.cs",
               "RelativeToolTip": "WebDatVeMayBay\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwD8AAAANAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T12:28:54.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T12:28:54.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThongBaoThanhToan.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\ThongBaoThanhToan.cshtml",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Home\\ThongBaoThanhToan.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\ThongBaoThanhToan.cshtml",
+              "RelativeToolTip": "WebDatVeMayBay\\Views\\Home\\ThongBaoThanhToan.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T13:59:56.648Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ThongBaoThanhToan.cshtml",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Home\\ThongBaoThanhToan.cshtml",
-              "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Home\\ThongBaoThanhToan.cshtml",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Home\\ThongBaoThanhToan.cshtml",
-              "RelativeToolTip": "WebDatVeMayBay\\Views\\Home\\ThongBaoThanhToan.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T13:59:56.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "_LayoutUser.cshtml",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Shared\\_LayoutUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Shared\\_LayoutUser.cshtml",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Shared\\_LayoutUser.cshtml",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Shared\\_LayoutUser.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Shared\\_LayoutUser.cshtml",
               "RelativeToolTip": "WebDatVeMayBay\\Views\\Shared\\_LayoutUser.cshtml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAjwHUAAAAOAAAAAAAAAA==",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAjwFoAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-01T11:51:52.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "ChuyenBay.cs",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\ChuyenBay.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\ChuyenBay.cs",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\ChuyenBay.cs",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\ChuyenBay.cs",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\ChuyenBay.cs",
               "RelativeToolTip": "WebDatVeMayBay\\models\\ChuyenBay.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:23:59.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T13:23:59.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "ChiTietVe.cs",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\ChiTietVe.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\ChiTietVe.cs",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\ChiTietVe.cs",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\ChiTietVe.cs",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\ChiTietVe.cs",
               "RelativeToolTip": "WebDatVeMayBay\\models\\ChiTietVe.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T13:34:49.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T13:34:49.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "FlightShopping.cshtml",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Home\\FlightShopping.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\FlightShopping.cshtml",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Home\\FlightShopping.cshtml",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Home\\FlightShopping.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\FlightShopping.cshtml",
               "RelativeToolTip": "WebDatVeMayBay\\Views\\Home\\FlightShopping.cshtml",
-              "ViewState": "AgIAAAgBAAAAAAAAAAAAADYBAAATAAAAAAAAAA==",
+              "ViewState": "AQIAAE0BAAAAAAAAAAAAABcAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-01T13:55:22.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Ve.cs",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\Ve.cs",
-              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\Ve.cs",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\Ve.cs",
-              "RelativeToolTip": "WebDatVeMayBay\\models\\Ve.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA5wB4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T13:18:44.094Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "KhachHang.cs",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\KhachHang.cs",
-              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\KhachHang.cs",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\KhachHang.cs",
-              "RelativeToolTip": "WebDatVeMayBay\\models\\KhachHang.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T02:44:59.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DBContext.cs",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\DBContext.cs",
-              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\DBContext.cs",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\DBContext.cs",
-              "RelativeToolTip": "WebDatVeMayBay\\models\\DBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T12:51:45.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebDatVeMayBay\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAAAAQBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T17:06:05.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DatCho.cs",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\DatCho.cs",
-              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\DatCho.cs",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\DatCho.cs",
-              "RelativeToolTip": "WebDatVeMayBay\\models\\DatCho.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T13:19:27.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MayBay.cs",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\MayBay.cs",
-              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\MayBay.cs",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\MayBay.cs",
-              "RelativeToolTip": "WebDatVeMayBay\\models\\MayBay.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:24:43.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "ChooseFlight.cshtml",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Home\\ChooseFlight.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\ChooseFlight.cshtml",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Home\\ChooseFlight.cshtml",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Home\\ChooseFlight.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\ChooseFlight.cshtml",
               "RelativeToolTip": "WebDatVeMayBay\\Views\\Home\\ChooseFlight.cshtml",
-              "ViewState": "AgIAANMAAAAAAAAAAAAmwO0AAAAhAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-26T15:15:22.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TaiKhoan.cs",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\TaiKhoan.cs",
-              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\TaiKhoan.cs",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\models\\TaiKhoan.cs",
-              "RelativeToolTip": "WebDatVeMayBay\\models\\TaiKhoan.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowBEAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T02:48:13.162Z",
+              "DocumentIndex": 2,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "WebDatVeMayBay\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T17:20:13.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
+              "Title": "stylesAdmin.css",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\CSS\\stylesAdmin.css",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\CSS\\stylesAdmin.css",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\CSS\\stylesAdmin.css",
+              "RelativeToolTip": "WebDatVeMayBay\\CSS\\stylesAdmin.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-10T16:57:50.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Web.config",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\Web.config",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Web.config",
+              "RelativeToolTip": "WebDatVeMayBay\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-10T16:58:37.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Account\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Account\\Login.cshtml",
-              "ToolTip": "E:\\BaiTap\\CNPM n\u00E2ng cao\\PRoject\\ProjectDatVeMayBay-master\\WebDatVeMayBay\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "WebDatVeMayBay\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABIAAAAAAAAAA==",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAAAAsAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-26T17:04:39.734Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InfoTraveler.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\InfoTraveler.cshtml",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Home\\InfoTraveler.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\InfoTraveler.cshtml",
+              "RelativeToolTip": "WebDatVeMayBay\\Views\\Home\\InfoTraveler.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAGEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T17:06:20.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebDatVeMayBay\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T02:55:41.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Ve.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\Ve.cs",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\Ve.cs",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\Ve.cs",
+              "RelativeToolTip": "WebDatVeMayBay\\models\\Ve.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wB4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T13:18:44.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "KhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\KhachHang.cs",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\KhachHang.cs",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\KhachHang.cs",
+              "RelativeToolTip": "WebDatVeMayBay\\models\\KhachHang.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T02:44:59.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DBContext.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\DBContext.cs",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\DBContext.cs",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\DBContext.cs",
+              "RelativeToolTip": "WebDatVeMayBay\\models\\DBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:51:45.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebDatVeMayBay\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAAAQBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T17:06:05.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DatCho.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\DatCho.cs",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\DatCho.cs",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\DatCho.cs",
+              "RelativeToolTip": "WebDatVeMayBay\\models\\DatCho.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T13:19:27.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MayBay.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\MayBay.cs",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\MayBay.cs",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\MayBay.cs",
+              "RelativeToolTip": "WebDatVeMayBay\\models\\MayBay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T13:24:43.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TaiKhoan.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "WebDatVeMayBay\\models\\TaiKhoan.cs",
+              "ToolTip": "C:\\Users\\DELL\\ProjectDatVeMayBay\\WebDatVeMayBay\\models\\TaiKhoan.cs",
+              "RelativeToolTip": "WebDatVeMayBay\\models\\TaiKhoan.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T02:48:13.162Z"
             }
           ]
         }
