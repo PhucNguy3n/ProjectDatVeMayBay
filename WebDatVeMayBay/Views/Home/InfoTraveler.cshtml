@@ -22,79 +22,141 @@
         <p>Họ: NGUYEN</p>
     </div>
 
-    <div class="traveler-form">
-        <form method="post" action="@Url.Action("SaveTraveler", "Home")">
-            <!-- Người lớn -->
-            @for (int i = 0; i < ViewBag.SoNguoi; i++)
-            {
-                <div class="form-adult">
-                    <h1>NGƯỜI LỚN</h1>
-                    <div class="group-input">
-                        <label for="DanhXung">Danh xưng*</label>
-                        <select id="DanhXung" name="DanhXung[@i]">
-                            <option value="ong">Ông</option>
-                            <option value="ba">Bà</option>
-                            <option value="co/chi">Cô/chị</option>
-                        </select>
-                    </div>
-
-                    <div class="group-input">
-                        <label for="Ten">Tên đệm và tên (như trong CCCD/hộ chiếu)*</label>
-                        <input type="text" id="Ten" name="Ten[@i]" required />
-                    </div>
-
-                    <div class="group-input">
-                        <label for="Ho">Họ (như trong CCCD/hộ chiếu)*</label>
-                        <input type="text" id="Ho" name="Ho[@i]" required />
-                    </div>
-
-                    <div class="group-input">
-                        <label for="NgaySinh">Ngày sinh*</label>
-                        <input type="date" id="NgaySinh" name="NgaySinh[@i]" required />
-                    </div>
-                </div>
-            }
-            <!-- Thông tin liên lạc -->
-            <div class="traveler-form-info">
-                <div class="form-info-contact">
-                    <h1>Thông tin liên lạc</h1>
-                    <label class="form-header">Thông tin liên lạc này được sử dụng để xử lý và lưu đặt chỗ này.</label>
-
-                    <div class="group-input">
-                        <label for="email">Địa chỉ email bắt buộc*</label>
-                        <input type="email" id="email" name="email" placeholder="" required />
-                    </div>
-
-                    <div class="group-input">
-                        <div class="phone-type">
-                            <label for="phone-type">Loại điện thoại*</label>
-                            <select id="phone-type" name="phone-type">
-                                <option>Cá nhân</option>
-                                <option>Doanh nghiệp</option>
-                            </select>
+    <div class="container">
+        <!-- Title section -->
+        <div class="title">Người lớn</div>
+        <div class="content-info">
+            <form action="@Url.Action("SaveTraveler", "Home")" method="post">
+                <div class="user-details">
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <input type="radio" name="gender" id="dot-3">
+                        <span class="gender-title">Danh xưng</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Ông</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Bà</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="gender">Cô/Chị</span>
+                            </label>
                         </div>
                     </div>
-
-                    <div class="group-input">
-                        <label for="phone-number">Số điện thoại*</label>
-                        <input type="text" id="phone-number" name="phone-number" placeholder="" required />
+                    <!-- Input for Full Name -->
+                    <div class="input-box">
+                        <span class="details">Họ và tên (như trong CCCD/hộ chiếu)</span>
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <!-- Input for Birth -->
+                    <div class="input-box">
+                        <span class="details">Ngày sinh</span>
+                        <input type="date" placeholder="" required>
                     </div>
                 </div>
-            </div>
-
-            <!-- Checkbox Privacy -->
-            <div class="traveler-form-check">
-                <div class="group-input">
-                    <input type="checkbox" id="privacy" name="privacy" value="privacy" required />
-                    <label for="privacy">
-                        Dữ liệu cá nhân của Quý khách thu thập trên trang này được xử lý
-                        và lưu trữ bởi Vietnam Airlines cho mục đích và theo điều kiện đã được công bố tại Chính sách bảo mật thông tin của Vietnam Airlines.
-                    </label>
-                </div>
-            </div>
-
-            <!-- Nút xác nhận -->
-            <button type="submit" class="btn-submit">Xác nhận</button>
-        </form>
+            </form>
+        </div>
     </div>
+
+    <div class="container">
+        <!-- Title section -->
+        <div class="title">Trẻ em</div>
+        <div class="content-info">
+            <form action="@Url.Action("SaveTraveler", "Home")" method="post">
+                <div class="user-details">
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <span class="gender-title">Danh xưng</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Nam</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Nữ</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Input for Full Name -->
+                    <div class="input-box">
+                        <span class="details">Họ và tên (như trong CCCD/hộ chiếu)</span>
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <!-- Input for Birth -->
+                    <div class="input-box">
+                        <span class="details">Ngày sinh</span>
+                        <input type="date" placeholder="" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Title section -->
+        <div class="title">Thông tin liên lạc</div>
+        <div class="content-info">
+            <form action="@Url.Action("SaveTraveler", "Home")" method="post">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Địa chỉ email bắt buộc</span>
+                        <input type="email" placeholder="" required>
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <span class="gender-title">Loại điện thoại</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Cá nhân</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Doanh nghiệp</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="group-input">
+                        <!-- Input for Full Name -->
+                        <div class="input-box">
+                            <span class="details">Mã quốc gia</span>
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <!-- Input for Birth -->
+                        <div class="input-box">
+                            <span class="details">Số điện thoại</span>
+                            <input type="text" placeholder="" required>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Checkbox Privacy -->
+    <div class="container">
+        <div class="group-input">
+            <input type="checkbox" id="privacy" name="privacy" value="privacy" required class="checkbox-privacy" />
+            <label for="privacy" class="privacy">
+                Dữ liệu cá nhân của Quý khách thu thập trên trang này được xử lý
+                và lưu trữ bởi Vietnam Airlines cho mục đích và theo điều kiện đã được công bố tại Chính sách bảo mật thông tin của Vietnam Airlines.
+            </label>
+        </div>
+        <div class="group-input">
+            <input type="checkbox" id="privacy" name="privacy" value="privacy" required class="checkbox-privac" y />
+            <label for="privacy" class="privacy">
+                Tôi đồng ý nhận các thông tin quảng cáo, tiếp thị qua email được nêu chi tiết trong Chính sách bảo mật (như thông báo, bản tin, khuyến mãi,
+                các ưu đãi khác liên quan đến sản phẩm và dịch vụ của Vietnam Airlines và các đối tác của Vietnam Airlines). Dự kiến tần suất nhận khoảng 02 email/tuần.
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn-submit">Xác nhận</button>
 </div>

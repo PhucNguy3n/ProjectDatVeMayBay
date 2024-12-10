@@ -203,6 +203,8 @@
     <Content Include="Areas\Admin\Views\NhanVien\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\NhanVien\Details.cshtml" />
     <Content Include="Areas\Admin\Views\NhanVien\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\KhachHang\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\KhachHang\LichSuDatVe.cshtml" />
     <None Include="Views\Home\FlightShopping.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -249,7 +251,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\KhachHang\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

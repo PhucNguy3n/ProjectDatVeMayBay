@@ -735,3 +735,79 @@ nav {
 .dropdown.open .options {
     display: block;
 }
+
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.search-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.field-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.field {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    flex: 1;
+    min-width: 200px;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.passenger-panel {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.passenger-category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.passenger-controls {
+    display: flex;
+    align-items: center;
+}
+
+    .passenger-controls button {
+        background-color: #ddd;
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
+
+    .passenger-controls .count {
+        margin: 0 10px;
+    }
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #search-btn:hover {
+        background-color: #0056b3;
+    }

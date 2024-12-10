@@ -35,7 +35,7 @@ namespace WebDatVeMayBay.Areas.Admin.Controllers
 
             switch (sortOrder)
             {
-                case "MaMayBay_descMaNhanVien_desc":
+                case "MaNhanVien_desc":
                     nhanViens = nhanViens.OrderByDescending(cb => cb.MaNV);
                     break;
                 case "TenNhanVien":
@@ -50,7 +50,7 @@ namespace WebDatVeMayBay.Areas.Admin.Controllers
             }
 
             // Phân trang
-            int pageSize = 3; // Số item mỗi trang
+            int pageSize = 10; // Số item mỗi trang
             int pageNumber = page ?? 1; // Trang hiện tại
             return View(nhanViens.ToPagedList(pageNumber, pageSize));
         }

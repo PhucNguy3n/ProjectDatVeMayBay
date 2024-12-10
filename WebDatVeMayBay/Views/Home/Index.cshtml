@@ -11,72 +11,83 @@
         display: none !important;
     }
 </style>
-<section class="section__container booking__container">
-    <div class="booking__nav">
-        <span class="nav-item active" data-type="one-way" onclick="toggleReturnDate(this)">Một chiều</span>
-        <span class="nav-item" data-type="round-trip" onclick="toggleReturnDate(this)">Khứ hồi</span>
+<div class="search-section">
+    <div class="search-fields">
+        <div class="field-group">
+            <div class="field">
+                <input type="radio" id="one-way" name="trip-type" value="one-way">
+                <label for="one-way">Một chiều</label>
+            </div>
+            <div class="field">
+                <input type="radio" id="round-trip" name="trip-type" value="round-trip">
+                <label for="round-trip">Khứ hồi</label>
+            </div>
+        </div>
+        <div class="field-group">
+            <div class="field">
+                <label for="departure">Nơi đi:</label>
+                <input type="text" id="departure" placeholder="Nhập nơi đi">
+            </div>
+            <div class="field">
+                <label for="destination">Nơi đến:</label>
+                <input type="text" id="destination" placeholder="Nhập nơi đến">
+            </div>
+            <div class="field">
+                <label for="departure-date">Ngày đi:</label>
+                <input type="date" id="departure-date" placeholder="Nhập ngày đi">
+            </div>
+        </div>
+        <div class="field-group">
+            <div class="field">
+                <label for="return-date">Ngày về:</label>
+                <input type="date" id="return-date" placeholder="Nhập ngày về">
+            </div>
+            <div class="field">
+                <label for="passenger-count">Số lượng hành khách:</label>
+                <input type="text" id="passengers" placeholder="" readonly>
+                <div id="passenger-panel" class="passenger-panel hidden bg-body">
+                    <div class="passenger-category">
+                        <span>Người lớn</span>
+                        <div class="passenger-controls">
+                            <button class="decrease">-</button>
+                            <span class="count">0</span>
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="passenger-category">
+                        <span>Trẻ em</span>
+                        <div class="passenger-controls">
+                            <button class="decrease">-</button>
+                            <span class="count">0</span>
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="passenger-category">
+                        <span>Em bé</span>
+                        <div class="passenger-controls">
+                            <button class="decrease">-</button>
+                            <span class="count">0</span>
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+                    <button id="confirm-passengers">Xong</button>
+                </div>
+            </div>
+            <div class="field">
+                <label for="ticket-class">Hạng vé:</label>
+                <select id="ticket-class">
+                    <option value="economy">Phổ thông</option>
+                    <option value="business">Thương gia</option>
+                    <option value="first-class">Hạng nhất</option>
+                </select>
+            </div>
+        </div>
     </div>
+    <div class="buttons">
+        <button id="search-btn">Tìm kiếm</button>
+    </div>
+</div>
 
-    <form method="get" action="/Home/ChooseFlight">
-        <div class="form__group">
-            <span><i class="ri-map-pin-line"></i></span>
-            <div class="input__content">
-                <div class="input__group">
-                    <input type="text" name="DiemDi" onkeyup="this.setAttribute('value', this.value);" value="" />
-                    <label>Điểm khởi hành</label>
-                </div>
-                <p>Bạn muốn đi đâu?</p>
-            </div>
-        </div>
-        <div class="form__group">
-            <span><i class="ri-map-pin-line"></i></span>
-            <div class="input__content">
-                <div class="input__group">
-                    <input type="text" name="DiemDen" onkeyup="this.setAttribute('value', this.value);" value="" />
-                    <label>Điểm đến</label>
-                </div>
-                <p>Bạn muốn đến đâu?</p>
-            </div>
-        </div>
-
-        <div class="form__group">
-            <span><i class="ri-calendar-line"></i></span>
-            <div class="input__content">
-                <div class="input__group">
-                    <input type="date" name="ThoiGianKhoiHanh" id="departureDate" onkeyup="this.setAttribute('value', this.value);" value="" class="myDate" />
-                    <label>Ngày Khởi Hành</label>
-                </div>
-                <p>Thêm ngày</p>
-            </div>
-        </div>
-        <div class="form__group return-date hidden">
-            <span><i class="ri-calendar-line"></i></span>
-            <div class="input__content">
-                <div class="input__group">
-                    <input type="date" name="ThoiGianVe" id="returnDate" onkeyup="this.setAttribute('value', this.value)" value="" class="myDate" />
-                    <label>Ngày Trở Về</label>
-                </div>
-                <p>Thêm ngày</p>
-            </div>
-        </div>
-
-        <a class="btn" href="javascript:void(0);" onclick="this.closest('form').submit()">
-            <i class="ri-search-line"></i>
-        </a>
-
-        <div class="form__group">
-            <span><i class="ri-user-3-line"></i></span>
-            <div class="input__content">
-                <div class="input__group">
-                    <input name="soKhach" type="text" onkeyup="this.setAttribute('value', this.value);" value="" />
-                    <label>Số Khách</label>
-                </div>
-                <p>Thêm khách</p>
-            </div>
-        </div>
-    </form>
-
-</section>
 
 <section class="section__container plan__container">
     <p class="subheader">HỖ TRỢ DU LỊCH</p>

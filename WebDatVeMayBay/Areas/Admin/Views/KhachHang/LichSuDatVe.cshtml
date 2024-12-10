@@ -1,0 +1,67 @@
+﻿@model WebDatVeMayBay.Models.KhachHang
+
+@{
+    ViewBag.Title = "Lịch Sử Đặt Vé";
+}
+
+<h2>Lịch Sử Đặt Vé - @Model.TenKH</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã Đặt Chỗ</th>
+            <th>Thời Gian Đặt Vé</th>
+            <th>Mã Chuyến Bay</th>
+            <th>Thanh Tiền</th>
+            <th>Trạng Thái</th>
+            <th>Chi Tiết Vé</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var datCho in Model.DatChos)
+        {
+            foreach (var ve in datCho.Ves)
+            {
+                <tr>
+                    <td>@datCho.MaDatCho</td>
+                    <td>@ve.ThoiGianDatVe.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@ve.MaChuyenBay</td>
+                    <td>@ve.ThanhTien.ToString("C")</td>
+                    <td>@ve.TrangThai</td>
+                    <td>
+                        <!-- Hiển thị danh sách chi tiết vé -->
+                        <ul>
+                            @foreach (var chiTietVe in ve.ChiTietVes)
+                            {
+                                <li>
+                                    <strong>Danh xưng:</strong> @chiTietVe.DanhXung <br />
+                                    <strong>Họ Tên:</strong> @chiTietVe.Ho @chiTietVe.Ten <br />
+                                    <strong>Ngày Sinh:</strong> @chiTietVe.NgaySinh.ToString("dd/MM/yyyy") <br />
+                                    <strong>Loại Hành Khách:</strong> @chiTietVe.LoaiHanhKhach <br />
+                                    <strong>Email:</strong> @chiTietVe.Email <br />
+                                    <strong>Số Điện Thoại:</strong> @chiTietVe.SoDienThoai <br />
+                                </li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        @for (int i = 1; i <= Math.Ceiling((double)ViewBag.TotalRecords / ViewBag.PageSize); i++)
+        {
+            <li class="@(i == ViewBag.CurrentPage ? "active" : "")">
+                <a href="@Url.Action("LichSuDatVe", new {
+                    email = Model.EmailKH,
+                    page = i,
+                    fromDate = ViewBag.FromDate,
+                    toDate = ViewBag.ToDate
+                })">@i</a>
+            </li>
+        }
+    </ul>
+</nav>

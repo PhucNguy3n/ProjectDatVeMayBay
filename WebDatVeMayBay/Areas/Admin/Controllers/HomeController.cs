@@ -17,6 +17,7 @@ namespace WebDatVeMayBay.Areas.Admin.Controllers
             ViewBag.NumberOfEmployees = db.NhanVien.Count();
             ViewBag.NumberOfFlights = db.ChuyenBay.Count();
             ViewBag.NumberOfPlanes = db.MayBay.Count();
+            ViewBag.NumberOfCustomers = db.KhachHang.Count();
 
             return View();
         }

@@ -50,7 +50,7 @@ namespace WebDatVeMayBay.Areas.Admin.Controllers
             }
 
             // Phân trang
-            int pageSize = 3; // Số item mỗi trang
+            int pageSize = 10; // Số item mỗi trang
             int pageNumber = page ?? 1; // Trang hiện tại
             return View(mayBays.ToPagedList(pageNumber, pageSize));
         }
