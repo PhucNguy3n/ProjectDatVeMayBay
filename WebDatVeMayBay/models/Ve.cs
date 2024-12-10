@@ -45,5 +45,7 @@ namespace WebDatVeMayBay.Models
 
         [ForeignKey("MaDatCho")]
         public virtual DatCho DatCho { get; set; }
+
+        public virtual ICollection<ChiTietVe> ChiTietVes { get; set; }
     }
 }

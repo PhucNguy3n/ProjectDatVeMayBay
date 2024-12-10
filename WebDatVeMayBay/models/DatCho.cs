@@ -22,5 +22,7 @@ namespace WebDatVeMayBay.Models
         // Mối quan hệ với bảng KhachHang
         [ForeignKey("EmailKH")]
         public virtual KhachHang KhachHang { get; set; }
+
+        public virtual ICollection<Ve> Ves { get; set; }
     }
 }

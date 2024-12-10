@@ -32,5 +32,7 @@ namespace WebDatVeMayBay.Models
 
         [StringLength(3)]
         public string GioiTinh { get; set; } // Giới tính (VD: Nam, Nữ)
+
+        public virtual ICollection<DatCho> DatChos { get; set; }
     }
 }

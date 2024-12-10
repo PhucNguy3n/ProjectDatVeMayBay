@@ -1,0 +1,85 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<WebDatVeMayBay.Models.KhachHang>
+
+@{
+    ViewBag.Title = "Danh sách khách hàng";
+}
+
+<h2 class="mb-5">Quản lý khách hàng / Danh sách khách hàng</h2>
+
+<div class="container-fluid mt-3">
+    <!-- Form tìm kiếm -->
+    @using (Html.BeginForm("Index", "KhachHang", FormMethod.Get))
+    {
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="text" name="searchTerm" class="form-control" placeholder="Tìm kiếm..." value="@Request.QueryString["searchTerm"]" />
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            </div>
+        </div>
+    }
+    <!-- Bảng danh sách khách hàng -->
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>
+                    @Html.ActionLink("Tên khách hàng", "Index", new { sortOrder = ViewBag.SortByTenKH, searchTerm = Request.QueryString["searchTerm"] })
+                </th>
+                <th>Giới tính</th>
+                <th>
+                    @Html.ActionLink("Ngày sinh", "Index", new { sortOrder = ViewBag.SortByNgaySinh, searchTerm = Request.QueryString["searchTerm"] })
+                </th>
+                <th>SDT</th>
+                <th>CCCD</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var khachHang in Model)
+            {
+                <tr>
+                    <td>@khachHang.EmailKH</td>
+                    <td>@khachHang.TenKH</td>
+                    <td>@khachHang.GioiTinh</td>
+                    <td>@khachHang.NgaySinh.Value.ToString("dd/MM/yyyy")</td>
+                    <td>@khachHang.SDT</td>
+                    <td>@khachHang.CCCD</td>
+                    <td>
+                        <a href="@Url.Action("LichSuDatVe", "KhachHang", new { id = khachHang.EmailKH })" class="btn btn-info btn-sm">Lịch sử đặt vé</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Phân trang -->
+    <div class="d-flex justify-content-center mt-4">
+        @Html.PagedListPager(Model,
+         page => Url.Action("Index",
+         new { page, sortOrder = ViewBag.CurrentSort, searchTerm = Request.QueryString["searchTerm"] }),
+         new PagedListRenderOptions
+         {
+             UlElementClasses = new[] { "pagination" },
+             LiElementClasses = new[] { "page-item" },
+             LinkToPreviousPageFormat = "<",
+             LinkToNextPageFormat = ">",
+             LinkToFirstPageFormat = "<<",
+             LinkToLastPageFormat = ">>",
+             DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+             DisplayLinkToLastPage = PagedListDisplayMode.Always,
+             DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+             DisplayLinkToNextPage = PagedListDisplayMode.Always,
+             Display = PagedListDisplayMode.IfNeeded,
+             FunctionToTransformEachPageLink = (liTag, aTag) =>
+             {
+                 aTag.AddCssClass("page-link");
+                 liTag.InnerHtml = aTag.ToString();
+                 return liTag;
+             }
+         })
+    </div>
+</div>
