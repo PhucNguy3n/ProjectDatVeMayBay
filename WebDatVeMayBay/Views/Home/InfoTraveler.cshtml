@@ -25,60 +25,35 @@
     <div class="traveler-form">
         <form method="post" action="@Url.Action("SaveTraveler", "Home")">
             <!-- Người lớn -->
-            <div class="form-adult">
-                <h1>NGƯỜI LỚN</h1>
-                <div class="group-input">
-                    <label for="DanhXung">Danh xưng*</label>
-                    <select id="DanhXung" name="DanhXung">
-                        <option value="ong">Ông</option>
-                        <option value="ba">Bà</option>
-                        <option value="co/chi">Cô/chị</option>
-                    </select>
-                </div>
+            @for (int i = 0; i < ViewBag.SoNguoi; i++)
+            {
+                <div class="form-adult">
+                    <h1>NGƯỜI LỚN</h1>
+                    <div class="group-input">
+                        <label for="DanhXung">Danh xưng*</label>
+                        <select id="DanhXung" name="DanhXung[@i]">
+                            <option value="ong">Ông</option>
+                            <option value="ba">Bà</option>
+                            <option value="co/chi">Cô/chị</option>
+                        </select>
+                    </div>
 
-                <div class="group-input">
-                    <label for="Ten">Tên đệm và tên (như trong CCCD/hộ chiếu)*</label>
-                    <input type="text" id="Ten" name="Ten" required />
-                </div>
+                    <div class="group-input">
+                        <label for="Ten">Tên đệm và tên (như trong CCCD/hộ chiếu)*</label>
+                        <input type="text" id="Ten" name="Ten[@i]" required />
+                    </div>
 
-                <div class="group-input">
-                    <label for="Ho">Họ (như trong CCCD/hộ chiếu)*</label>
-                    <input type="text" id="Ho" name="Ho" required />
-                </div>
+                    <div class="group-input">
+                        <label for="Ho">Họ (như trong CCCD/hộ chiếu)*</label>
+                        <input type="text" id="Ho" name="Ho[@i]" required />
+                    </div>
 
-                <div class="group-input">
-                    <label for="NgaySinh">Ngày sinh*</label>
-                    <input type="date" id="NgaySinh" name="NgaySinh" required />
+                    <div class="group-input">
+                        <label for="NgaySinh">Ngày sinh*</label>
+                        <input type="date" id="NgaySinh" name="NgaySinh[@i]" required />
+                    </div>
                 </div>
-            </div>
-
-            <!-- Trẻ em -->
-            <div class="form-child">
-                <h1>TRẺ EM</h1>
-                <div class="group-input">
-                    <label for="DanhXung">Danh xưng*</label>
-                    <select id="DanhXungTE" name="DanhXungTE">
-                        <option value="nam">Nam</option>
-                        <option value="nu">Nữ</option>
-                    </select>
-                </div>
-
-                <div class="group-input">
-                    <label for="Ten">Tên đệm và tên (như trong CCCD/hộ chiếu)*</label>
-                    <input type="text" id="TenTE" name="TenTE" />
-                </div>
-
-                <div class="group-input">
-                    <label for="Ho">Họ (như trong CCCD/hộ chiếu)*</label>
-                    <input type="text" id="HoTE" name="HoTE" />
-                </div>
-
-                <div class="group-input">
-                    <label for="NgaySinh">Ngày sinh*</label>
-                    <input type="date" id="NgaySinhTE" name="NgaySinhTE" />
-                </div>
-            </div>
-
+            }
             <!-- Thông tin liên lạc -->
             <div class="traveler-form-info">
                 <div class="form-info-contact">

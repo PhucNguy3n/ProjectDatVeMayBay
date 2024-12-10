@@ -1,5 +1,7 @@
-﻿@model List<WebDatVeMayBay.Models.ChuyenBay>
+﻿
+@model WebDatVeMayBay.Models.ChooseFlightViewModel
 @{
+    var isReturn = Session["check"] != null && (int)Session["check"] == 2 ? "true" : "false";
     ViewBag.Title = "ChooseFlight";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
@@ -14,36 +16,44 @@
         background-color: #f9f9f9;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
     .table {
         width: 100%;
         border-collapse: collapse;
         font-family: 'Arial', sans-serif;
         text-align: left;
     }
+
         .table th, .table td {
             padding: 12px;
             text-align: center;
             border: 1px solid #ddd;
             font-size: 14px;
         }
+
         .table th {
             background-color: #007bff;
             color: white;
             font-weight: bold;
         }
+
         .table tbody tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+
         .table tbody tr:hover {
             background-color: #e1e1e1;
             cursor: pointer;
         }
+
         .table td {
             vertical-align: middle;
         }
+
     .text-center {
         text-align: center;
     }
+
     .table-bordered td, .table-bordered th {
         border: 1px solid #ddd;
     }
@@ -217,34 +227,78 @@
                 </tr>
             </thead>
             <tbody>
-                @if (Model != null && Model.Any())
+                @if (Model.IsReturnTrip)
                 {
-                    foreach (var flight in Model)
-                    {
-                        <tr>
-                            <td>@flight.MaChuyenBay</td>
-                            <td>@flight.DiemDi</td>
-                            <td>@flight.DiemDen</td>
-                            <td>@flight.ThoiGianKhoiHanh.ToString("yyyy-MM-dd HH:mm")</td>
-                            <td>@flight.ThoiGianDen.ToString("yyyy-MM-dd HH:mm")</td>
-                            <td>@flight.ThoiGianBayDuTinh</td>
-                            <td>@flight.GiaChuyenBay.ToString("#,0") VNĐ</td>
-                            <td>
-                                <!-- Sử dụng form để gửi mã chuyến bay -->
-                                <form action="@Url.Action("ChonChuyenBay", "Home")" method="post">
-                                    <input type="hidden" name="maChuyenBay" value="@flight.MaChuyenBay" />
-                                    <button type="submit" class="btn btn-primary">Chọn chuyến</button>
-                                </form>
-                            </td>
-                        </tr>
-                    }
+                    <h3>Chọn chuyến bay chiều về</h3>
                 }
                 else
                 {
-                    <tr>
-                        <td colspan="7" class="text-center">Không có dữ liệu chuyến bay.</td>
-                    </tr>
+                    <h3>Chọn chuyến bay chiều đi</h3>
                 }
+
+                <div id="flight-list">
+                    <table class="table table-striped table-bordered">
+                        <tbody>
+                            @if (Model.IsReturnTrip && Model.ReturnFlights != null && Model.ReturnFlights.Count > 0)
+                            {
+                                // Hiển thị chuyến bay chiều về
+                                foreach (var flight in Model.ReturnFlights)
+                                {
+                                    <tr>
+                                        <td>@flight.MaChuyenBay</td>
+                                        <td>@flight.DiemDi</td>
+                                        <td>@flight.DiemDen</td>
+                                        <td>@flight.ThoiGianKhoiHanh.ToString("yyyy-MM-dd HH:mm")</td>
+                                        <td>@flight.ThoiGianDen.ToString("yyyy-MM-dd HH:mm")</td>
+                                        <td>@flight.ThoiGianBayDuTinh</td>
+                                        <td>@flight.GiaChuyenBay.ToString("#,0") VNĐ</td>
+                                        <td>
+                                            <form action="@Url.Action("ChooseFlight", "Home")" method="post">
+                                                <input type="hidden" name="maChuyenBay" value="@flight.MaChuyenBay" />
+                                                <input type="hidden" name="isReturn" value="true" />
+                                                <button type="submit" class="btn btn-primary">
+                                                    Chọn chuyến
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else if (Model.OutboundFlights != null && Model.OutboundFlights.Count > 0)
+                            {
+
+                                // Hiển thị chuyến bay chiều đi
+                                foreach (var flight in Model.OutboundFlights)
+                                {
+                                    <tr>
+                                        <td>@flight.MaChuyenBay</td>
+                                        <td>@flight.DiemDi</td>
+                                        <td>@flight.DiemDen</td>
+                                        <td>@flight.ThoiGianKhoiHanh.ToString("yyyy-MM-dd HH:mm")</td>
+                                        <td>@flight.ThoiGianDen.ToString("yyyy-MM-dd HH:mm")</td>
+                                        <td>@flight.ThoiGianBayDuTinh</td>
+                                        <td>@flight.GiaChuyenBay.ToString("#,0") VNĐ</td>
+                                        <td>
+                                            <form action="@Url.Action("ChooseFlight", "Home")" method="post">
+                                                <input type="hidden" name="maChuyenBay" value="@flight.MaChuyenBay" />
+                                                <input type="hidden" name="isReturn" value="@isReturn" />
+                                                <button type="submit" class="btn btn-primary">
+                                                    Chọn chuyến
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="8" class="text-center">Không có dữ liệu chuyến bay.</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </tbody>
         </table>
     </div>
@@ -273,7 +327,7 @@
                 popup.style.display = "none";
             });
         });
-                });
+                    });
     </script>
 
 </div>

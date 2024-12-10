@@ -173,6 +173,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ChiTietVe.cs" />
+    <Compile Include="Models\ChooseFlightViewModel.cs" />
     <Compile Include="Models\ChuyenBay.cs" />
     <Compile Include="Models\DatCho.cs" />
     <Compile Include="Models\DBContext.cs" />

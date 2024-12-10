@@ -15,7 +15,6 @@
     <div class="booking__nav">
         <span class="nav-item active" data-type="one-way" onclick="toggleReturnDate(this)">Một chiều</span>
         <span class="nav-item" data-type="round-trip" onclick="toggleReturnDate(this)">Khứ hồi</span>
-        <span class="nav-item" data-type="multi-trip" onclick="toggleReturnDate(this)">Nhiều chặng</span>
     </div>
 
     <form method="get" action="/Home/ChooseFlight">
@@ -54,7 +53,7 @@
             <span><i class="ri-calendar-line"></i></span>
             <div class="input__content">
                 <div class="input__group">
-                    <input type="date" name="ThoiGianTroVe" id="returnDate" class="myDate" />
+                    <input type="date" name="ThoiGianVe" id="returnDate" onkeyup="this.setAttribute('value', this.value)" value="" class="myDate" />
                     <label>Ngày Trở Về</label>
                 </div>
                 <p>Thêm ngày</p>
@@ -69,7 +68,7 @@
             <span><i class="ri-user-3-line"></i></span>
             <div class="input__content">
                 <div class="input__group">
-                    <input type="text" onkeyup="this.setAttribute('value', this.value);" value="" />
+                    <input name="soKhach" type="text" onkeyup="this.setAttribute('value', this.value);" value="" />
                     <label>Số Khách</label>
                 </div>
                 <p>Thêm khách</p>
